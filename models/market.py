@@ -1,11 +1,11 @@
 import json
 from typing import List
 from datetime import datetime
+import pandas as pd
 
 # custom
 from settings import DATA_DIR, CONTANT_DIR
 from models.base import PythonDictObject
-
 
 class MarketData(PythonDictObject):
     def __init__(
@@ -34,6 +34,21 @@ class MarketData(PythonDictObject):
     def from_dict(cls, dict_representation):
         return cls(**dict_representation)
 
+    def to_series(self):
+        # Convert coin's attributes to a Series
+        data = {
+            'dayNtlVlm': float(self.dayNtlVlm),
+            'funding': float(self.funding),
+            'impactPxs': self.impactPxs,
+            'markPx': float(self.markPx),
+            'midPx': float(self.midPx),
+            'openInterest': float(self.openInterest),
+            'oraclePx': float(self.oraclePx),
+            'premium': float(self.premium),
+            'prevDayPx': float(self.prevDayPx),
+            # Include other attributes as needed
+        }
+        return pd.Series(data)
 
 class Coin(PythonDictObject):
     def __init__(
@@ -60,6 +75,17 @@ class Coin(PythonDictObject):
             MarketData.from_dict(dict_representation["marketData"]),
         )
 
+    def to_series(self):
+        # Convert coin's attributes to a Series
+        data = {
+            'maxLeverage': self.maxLeverage,
+            'name': self.name,
+            'onlyIsolated': self.onlyIsolated,
+            'szDecimals': self.szDecimals,
+            # Include other attributes as needed
+        }
+        data.update(self.marketData.to_series())
+        return pd.Series(data)
 
 class Market(PythonDictObject):
     def __init__(self, coins: dict[str, Coin]):
@@ -76,9 +102,17 @@ class Market(PythonDictObject):
                 file.write(f"    {coin} = '{coin}'\n")
         return f"Coin names exported to {file_path}"
 
+    def get_coin(self, coin_name: str):
+        return self.coins[coin_name].to_dict()
+
+    def to_df(self):
+        # Create a DataFrame from a list of Series objects
+        df = pd.DataFrame([coin.to_series() for coin in self.coins.values()])
+        return df
+
     ########## storage ##########
     @classmethod
-    def fromJson(self, res):
+    def from_response(self, res):
         coins = {}
         _universe: List = res[0]["universe"]
         _marketData: List = res[1]
@@ -117,7 +151,7 @@ class Market(PythonDictObject):
         ### Get the current date and time
         now = datetime.now()
         # Format the date and time as a string
-        # dt = now.strftime("%Y-%m-%d_%H:%M:%S")
+        # dt = now.strftime("%Y-%m-%d-%H:%M:%S")
         dt = now.strftime("%Y-%m-%d")
 
         ### Write the dictionary to a JSON file

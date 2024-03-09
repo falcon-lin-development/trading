@@ -42,6 +42,7 @@ def init():
     from settings import BASE_DIR, DATA_DIR, CONTANT_DIR
 
     os.chdir(BASE_DIR) # Change the current working directory to the project root
+    print(f"Changed current working directory to: {BASE_DIR}")
     print(f"Initialized project with base directory: {BASE_DIR}")
 
 
