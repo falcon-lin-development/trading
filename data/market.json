@@ -6,18 +6,18 @@
             "onlyIsolated": false,
             "szDecimals": 2,
             "marketData": {
-                "dayNtlVlm": "6599027.6377",
-                "funding": "0.00002074",
+                "dayNtlVlm": "6561945.9241",
+                "funding": "0.00001987",
                 "impactPxs": [
-                    "146.29",
-                    "146.32"
+                    "145.63",
+                    "145.66"
                 ],
-                "markPx": "146.31",
-                "midPx": "146.305",
-                "openInterest": "6749.55",
-                "oraclePx": "146.19",
-                "premium": "0.00068404",
-                "prevDayPx": "144.38"
+                "markPx": "145.71",
+                "midPx": "145.645",
+                "openInterest": "6700.74",
+                "oraclePx": "145.6",
+                "premium": "0.00020604",
+                "prevDayPx": "144.75"
             }
         },
         "APT": {
@@ -26,18 +26,18 @@
             "onlyIsolated": false,
             "szDecimals": 2,
             "marketData": {
-                "dayNtlVlm": "796327.33182",
-                "funding": "0.00008051",
+                "dayNtlVlm": "771807.80612",
+                "funding": "0.00011809",
                 "impactPxs": [
-                    "13.592",
-                    "13.594"
+                    "13.703",
+                    "13.706"
                 ],
-                "markPx": "13.592",
-                "midPx": "13.593",
-                "openInterest": "1321.49",
-                "oraclePx": "13.574",
-                "premium": "0.00132606",
-                "prevDayPx": "13.512"
+                "markPx": "13.704",
+                "midPx": "13.7045",
+                "openInterest": "788.63",
+                "oraclePx": "13.684",
+                "premium": "0.00138848",
+                "prevDayPx": "13.41"
             }
         },
         "ATOM": {
@@ -46,18 +46,18 @@
             "onlyIsolated": false,
             "szDecimals": 2,
             "marketData": {
-                "dayNtlVlm": "479455.96401",
-                "funding": "0.00004106",
+                "dayNtlVlm": "476524.23818",
+                "funding": "0.00004893",
                 "impactPxs": [
-                    "13.423",
-                    "13.426"
+                    "13.485",
+                    "13.488"
                 ],
-                "markPx": "13.425",
-                "midPx": "13.4245",
-                "openInterest": "15427.69",
-                "oraclePx": "13.411",
-                "premium": "0.00089479",
-                "prevDayPx": "13.631"
+                "markPx": "13.484",
+                "midPx": "13.4865",
+                "openInterest": "15444.54",
+                "oraclePx": "13.471",
+                "premium": "0.00103927",
+                "prevDayPx": "13.71"
             }
         },
         "BTC": {
@@ -66,18 +66,18 @@
             "onlyIsolated": false,
             "szDecimals": 5,
             "marketData": {
-                "dayNtlVlm": "14613810.19285",
-                "funding": "0.0000231",
+                "dayNtlVlm": "14613564.22104999",
+                "funding": "0.00003072",
                 "impactPxs": [
-                    "68186.0",
-                    "68193.0"
+                    "68201.0",
+                    "68210.0"
                 ],
-                "markPx": "68189.0",
-                "midPx": "68189.5",
-                "openInterest": "25.61245",
-                "oraclePx": "68138.0",
-                "premium": "0.00070445",
-                "prevDayPx": "67168.0"
+                "markPx": "68201.0",
+                "midPx": "68205.5",
+                "openInterest": "25.61188",
+                "oraclePx": "68147.0",
+                "premium": "0.0007924",
+                "prevDayPx": "67307.0"
             }
         },
         "ETH": {
@@ -86,18 +86,18 @@
             "onlyIsolated": false,
             "szDecimals": 4,
             "marketData": {
-                "dayNtlVlm": "7971159.48014",
-                "funding": "0.00002224",
+                "dayNtlVlm": "7993723.18104",
+                "funding": "0.00003176",
                 "impactPxs": [
-                    "3924.8",
-                    "3925.2"
+                    "3925.8",
+                    "3926.3"
                 ],
-                "markPx": "3924.9",
-                "midPx": "3925.0",
-                "openInterest": "76.2342",
-                "oraclePx": "3921.8",
-                "premium": "0.00076495",
-                "prevDayPx": "3902.9"
+                "markPx": "3926.0",
+                "midPx": "3926.05",
+                "openInterest": "65.3964",
+                "oraclePx": "3922.7",
+                "premium": "0.00079027",
+                "prevDayPx": "3913.7"
             }
         },
         "MATIC": {
@@ -106,18 +106,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "353252.37956",
-                "funding": "0.0000377",
+                "dayNtlVlm": "353304.13658",
+                "funding": "0.00004153",
                 "impactPxs": [
-                    "1.1338",
-                    "1.1341"
+                    "1.1352",
+                    "1.1355"
                 ],
-                "markPx": "1.134",
-                "midPx": "1.13395",
-                "openInterest": "9203.8",
-                "oraclePx": "1.1329",
-                "premium": "0.00079442",
-                "prevDayPx": "1.1535"
+                "markPx": "1.1353",
+                "midPx": "1.13535",
+                "openInterest": "9253.5",
+                "oraclePx": "1.1342",
+                "premium": "0.00088168",
+                "prevDayPx": "1.1636"
             }
         },
         "BNB": {
@@ -126,18 +126,18 @@
             "onlyIsolated": false,
             "szDecimals": 3,
             "marketData": {
-                "dayNtlVlm": "1257844.7675",
+                "dayNtlVlm": "1323494.12502",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "483.47",
-                    "483.54"
+                    "486.65",
+                    "486.72"
                 ],
-                "markPx": "483.56",
-                "midPx": "483.505",
-                "openInterest": "264.363",
-                "oraclePx": "483.8",
-                "premium": "-0.00053741",
-                "prevDayPx": "465.19"
+                "markPx": "486.67",
+                "midPx": "486.685",
+                "openInterest": "243.382",
+                "oraclePx": "486.9",
+                "premium": "-0.00036969",
+                "prevDayPx": "467.18"
             }
         },
         "AVAX": {
@@ -146,18 +146,18 @@
             "onlyIsolated": false,
             "szDecimals": 2,
             "marketData": {
-                "dayNtlVlm": "1987112.44573",
-                "funding": "0.00009476",
+                "dayNtlVlm": "1967480.11074",
+                "funding": "0.00010904",
                 "impactPxs": [
-                    "42.59",
-                    "42.596"
+                    "42.67",
+                    "42.675"
                 ],
-                "markPx": "42.59",
-                "midPx": "42.593",
+                "markPx": "42.673",
+                "midPx": "42.6725",
                 "openInterest": "996.7",
-                "oraclePx": "42.535",
-                "premium": "0.00129305",
-                "prevDayPx": "43.044"
+                "oraclePx": "42.61",
+                "premium": "0.00140812",
+                "prevDayPx": "43.111"
             }
         },
         "GMT": {
@@ -166,18 +166,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "447473.45198",
-                "funding": "0.0000125",
+                "dayNtlVlm": "447426.01634",
+                "funding": "0.00001997",
                 "impactPxs": [
-                    "0.30309",
-                    "0.30561"
+                    "0.30381",
+                    "0.30392"
                 ],
-                "markPx": "0.30437",
-                "midPx": "0.30435",
-                "openInterest": "212558.0",
-                "oraclePx": "0.30393",
-                "premium": "0.0",
-                "prevDayPx": "0.31083"
+                "markPx": "0.3039",
+                "midPx": "0.303865",
+                "openInterest": "213756.0",
+                "oraclePx": "0.30347",
+                "premium": "0.00112037",
+                "prevDayPx": "0.31226"
             }
         },
         "DYDX": {
@@ -186,18 +186,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "767028.78154",
-                "funding": "0.0001011",
+                "dayNtlVlm": "761082.88588",
+                "funding": "0.00012905",
                 "impactPxs": [
-                    "4.2728",
-                    "4.274"
+                    "4.267",
+                    "4.2676"
                 ],
-                "markPx": "4.2736",
-                "midPx": "4.2734",
-                "openInterest": "14564.7",
-                "oraclePx": "4.267",
-                "premium": "0.00135927",
-                "prevDayPx": "4.3267"
+                "markPx": "4.2665",
+                "midPx": "4.2673",
+                "openInterest": "15910.9",
+                "oraclePx": "4.259",
+                "premium": "0.00187838",
+                "prevDayPx": "4.3047"
             }
         },
         "APE": {
@@ -206,18 +206,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "226021.22069",
-                "funding": "0.0000125",
+                "dayNtlVlm": "205659.33696",
+                "funding": "0.00011187",
                 "impactPxs": [
-                    "2.21717",
-                    "2.2468"
+                    "2.2524",
+                    "2.2532"
                 ],
-                "markPx": "2.2299",
-                "midPx": "2.232",
-                "openInterest": "41728.0",
-                "oraclePx": "2.2276",
-                "premium": "0.0",
-                "prevDayPx": "2.2292"
+                "markPx": "2.2532",
+                "midPx": "2.2528",
+                "openInterest": "41699.9",
+                "oraclePx": "2.2492",
+                "premium": "0.00142273",
+                "prevDayPx": "2.1932"
             }
         },
         "OP": {
@@ -226,18 +226,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "740814.39346",
-                "funding": "0.0000993",
+                "dayNtlVlm": "738196.31565",
+                "funding": "0.0001204",
                 "impactPxs": [
-                    "4.5589",
-                    "4.5595"
+                    "4.57",
+                    "4.5706"
                 ],
-                "markPx": "4.5588",
-                "midPx": "4.5592",
-                "openInterest": "45268.7",
-                "oraclePx": "4.553",
-                "premium": "0.00129585",
-                "prevDayPx": "4.6223"
+                "markPx": "4.5702",
+                "midPx": "4.5703",
+                "openInterest": "45211.4",
+                "oraclePx": "4.563",
+                "premium": "0.00153408",
+                "prevDayPx": "4.6271"
             }
         },
         "kPEPE": {
@@ -246,18 +246,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "3449325.306751",
-                "funding": "0.00016563",
+                "dayNtlVlm": "3424867.676093",
+                "funding": "0.0001571",
                 "impactPxs": [
-                    "0.009479",
-                    "0.009482"
+                    "0.009542",
+                    "0.009566"
                 ],
-                "markPx": "0.009488",
-                "midPx": "0.00948",
-                "openInterest": "511062.0",
-                "oraclePx": "0.009471",
-                "premium": "0.00084468",
-                "prevDayPx": "0.00785"
+                "markPx": "0.00957",
+                "midPx": "0.009554",
+                "openInterest": "774249.0",
+                "oraclePx": "0.00955",
+                "premium": "0.0",
+                "prevDayPx": "0.008075"
             }
         },
         "ARB": {
@@ -266,18 +266,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "2351684.15367",
-                "funding": "0.00009251",
+                "dayNtlVlm": "2325568.42731",
+                "funding": "0.00009266",
                 "impactPxs": [
-                    "2.1467",
-                    "2.1471"
+                    "2.1452",
+                    "2.1456"
                 ],
-                "markPx": "2.1471",
-                "midPx": "2.1469",
-                "openInterest": "50351.2",
-                "oraclePx": "2.1441",
-                "premium": "0.00121263",
-                "prevDayPx": "2.1712"
+                "markPx": "2.1454",
+                "midPx": "2.1454",
+                "openInterest": "52230.1",
+                "oraclePx": "2.1425",
+                "premium": "0.00126021",
+                "prevDayPx": "2.1779"
             }
         },
         "RLB": {
@@ -289,13 +289,13 @@
                 "dayNtlVlm": "75546.2476",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "0.126652",
-                    "0.136062"
+                    "0.127264",
+                    "0.136186"
                 ],
-                "markPx": "0.13022",
-                "midPx": "0.131605",
+                "markPx": "0.1308",
+                "midPx": "0.13222",
                 "openInterest": "2279.0",
-                "oraclePx": "0.13153",
+                "oraclePx": "0.13201",
                 "premium": "0.0",
                 "prevDayPx": "0.12852"
             }
@@ -306,18 +306,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "2031443.32112",
-                "funding": "0.00014105",
+                "dayNtlVlm": "2258116.41117",
+                "funding": "0.00017795",
                 "impactPxs": [
-                    "8.9012",
-                    "8.9056"
+                    "9.1692",
+                    "9.1719"
                 ],
-                "markPx": "8.9014",
-                "midPx": "8.9034",
-                "openInterest": "1297.9",
-                "oraclePx": "8.8838",
-                "premium": "0.00195862",
-                "prevDayPx": "7.2712"
+                "markPx": "9.18",
+                "midPx": "9.17055",
+                "openInterest": "4459.6",
+                "oraclePx": "9.159",
+                "premium": "0.00111366",
+                "prevDayPx": "7.3723"
             }
         },
         "HPOS": {
@@ -329,13 +329,13 @@
                 "dayNtlVlm": "1417.530118",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "0.149127",
-                    "0.16335"
+                    "0.153356",
+                    "0.166059"
                 ],
-                "markPx": "0.15373",
-                "midPx": "0.15613",
+                "markPx": "0.15798",
+                "midPx": "0.159995",
                 "openInterest": "32549.0",
-                "oraclePx": "0.15507",
+                "oraclePx": "0.15945",
                 "premium": "0.0",
                 "prevDayPx": "0.043977"
             }
@@ -349,13 +349,13 @@
                 "dayNtlVlm": "62.0",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "64.9815",
+                    "65.2133",
                     "67.6764"
                 ],
                 "markPx": "67.074",
-                "midPx": "66.3765",
+                "midPx": "66.399",
                 "openInterest": "33.8",
-                "oraclePx": "66.337",
+                "oraclePx": "66.352",
                 "premium": "0.0",
                 "prevDayPx": "62.0"
             }
@@ -366,18 +366,18 @@
             "onlyIsolated": false,
             "szDecimals": 2,
             "marketData": {
-                "dayNtlVlm": "63473.17219",
+                "dayNtlVlm": "62815.79225",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "86.8357",
-                    "87.075"
+                    "86.82",
+                    "86.8379"
                 ],
-                "markPx": "86.965",
-                "midPx": "86.9555",
-                "openInterest": "185.32",
-                "oraclePx": "86.885",
-                "premium": "0.0",
-                "prevDayPx": "88.879"
+                "markPx": "86.837",
+                "midPx": "86.8285",
+                "openInterest": "184.09",
+                "oraclePx": "86.74",
+                "premium": "0.0009223",
+                "prevDayPx": "89.199"
             }
         },
         "FXS": {
@@ -386,18 +386,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "134961.81894",
+                "dayNtlVlm": "138002.02033",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "9.39969",
-                    "9.58289"
+                    "9.39646",
+                    "9.4028"
                 ],
-                "markPx": "9.492",
-                "midPx": "9.4911",
-                "openInterest": "24702.3",
-                "oraclePx": "9.474",
-                "premium": "0.0",
-                "prevDayPx": "8.4768"
+                "markPx": "9.396",
+                "midPx": "9.39935",
+                "openInterest": "24682.7",
+                "oraclePx": "9.383",
+                "premium": "0.00143451",
+                "prevDayPx": "8.5256"
             }
         },
         "MKR": {
@@ -406,18 +406,18 @@
             "onlyIsolated": false,
             "szDecimals": 4,
             "marketData": {
-                "dayNtlVlm": "220871.64965",
-                "funding": "0.00014796",
+                "dayNtlVlm": "252911.64984",
+                "funding": "0.00015724",
                 "impactPxs": [
-                    "2162.2",
-                    "2162.5"
+                    "2173.5",
+                    "2173.9"
                 ],
-                "markPx": "2161.6",
-                "midPx": "2162.35",
-                "openInterest": "35.8266",
-                "oraclePx": "2158.0",
-                "premium": "0.00194625",
-                "prevDayPx": "2096.4"
+                "markPx": "2173.9",
+                "midPx": "2173.7",
+                "openInterest": "43.7728",
+                "oraclePx": "2170.0",
+                "premium": "0.0016129",
+                "prevDayPx": "2099.7"
             }
         },
         "AAVE": {
@@ -426,18 +426,18 @@
             "onlyIsolated": false,
             "szDecimals": 2,
             "marketData": {
-                "dayNtlVlm": "417385.3459",
-                "funding": "0.00003713",
+                "dayNtlVlm": "416252.2787",
+                "funding": "0.00002341",
                 "impactPxs": [
-                    "130.24",
-                    "130.33"
+                    "130.75",
+                    "130.78"
                 ],
-                "markPx": "130.31",
-                "midPx": "130.285",
-                "openInterest": "1476.75",
-                "oraclePx": "130.17",
-                "premium": "0.00053776",
-                "prevDayPx": "129.24"
+                "markPx": "130.8",
+                "midPx": "130.765",
+                "openInterest": "1476.24",
+                "oraclePx": "130.63",
+                "premium": "0.00091863",
+                "prevDayPx": "129.43"
             }
         },
         "SNX": {
@@ -446,18 +446,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "204992.36867",
-                "funding": "0.00002095",
+                "dayNtlVlm": "205016.14601",
+                "funding": "0.00003807",
                 "impactPxs": [
-                    "4.3375",
-                    "4.3405"
+                    "4.34149",
+                    "4.3435"
                 ],
-                "markPx": "4.3384",
-                "midPx": "4.339",
-                "openInterest": "1314.8",
-                "oraclePx": "4.333",
-                "premium": "0.00103854",
-                "prevDayPx": "4.465"
+                "markPx": "4.3424",
+                "midPx": "4.3425",
+                "openInterest": "1356.7",
+                "oraclePx": "4.337",
+                "premium": "0.00103528",
+                "prevDayPx": "4.4633"
             }
         },
         "RNDR": {
@@ -466,18 +466,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "1161345.50963",
-                "funding": "0.00011526",
+                "dayNtlVlm": "1212579.03128",
+                "funding": "0.00010043",
                 "impactPxs": [
-                    "10.597",
-                    "10.6"
+                    "10.737",
+                    "10.741"
                 ],
-                "markPx": "10.606",
-                "midPx": "10.5985",
-                "openInterest": "6978.7",
-                "oraclePx": "10.594",
-                "premium": "0.00028318",
-                "prevDayPx": "9.6213"
+                "markPx": "10.742",
+                "midPx": "10.739",
+                "openInterest": "8355.8",
+                "oraclePx": "10.726",
+                "premium": "0.00102555",
+                "prevDayPx": "9.6355"
             }
         },
         "LDO": {
@@ -486,18 +486,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "389820.14079",
-                "funding": "0.00007967",
+                "dayNtlVlm": "389858.1815",
+                "funding": "0.0000781",
                 "impactPxs": [
-                    "3.4269",
-                    "3.4313"
+                    "3.4233",
+                    "3.4238"
                 ],
-                "markPx": "3.4298",
-                "midPx": "3.4291",
-                "openInterest": "68092.1",
-                "oraclePx": "3.424",
-                "premium": "0.00084696",
-                "prevDayPx": "3.4153"
+                "markPx": "3.423",
+                "midPx": "3.42355",
+                "openInterest": "68064.8",
+                "oraclePx": "3.418",
+                "premium": "0.00155061",
+                "prevDayPx": "3.4186"
             }
         },
         "SUI": {
@@ -506,18 +506,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "525971.48413",
-                "funding": "0.00012585",
+                "dayNtlVlm": "502757.84169",
+                "funding": "0.00015008",
                 "impactPxs": [
-                    "1.5324",
-                    "1.5326"
+                    "1.5362",
+                    "1.5366"
                 ],
-                "markPx": "1.5327",
-                "midPx": "1.5325",
-                "openInterest": "69649.0",
-                "oraclePx": "1.5301",
-                "premium": "0.00150317",
-                "prevDayPx": "1.5592"
+                "markPx": "1.5361",
+                "midPx": "1.5364",
+                "openInterest": "69713.7",
+                "oraclePx": "1.5333",
+                "premium": "0.00189135",
+                "prevDayPx": "1.5626"
             }
         },
         "INJ": {
@@ -526,18 +526,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "738479.5009",
-                "funding": "0.00007854",
+                "dayNtlVlm": "743431.6324",
+                "funding": "0.00008957",
                 "impactPxs": [
-                    "41.745",
-                    "41.751"
+                    "41.8",
+                    "41.806"
                 ],
-                "markPx": "41.758",
-                "midPx": "41.748",
-                "openInterest": "2095.7",
-                "oraclePx": "41.71",
-                "premium": "0.00083913",
-                "prevDayPx": "43.159"
+                "markPx": "41.795",
+                "midPx": "41.803",
+                "openInterest": "2220.1",
+                "oraclePx": "41.74",
+                "premium": "0.00143747",
+                "prevDayPx": "43.295"
             }
         },
         "STX": {
@@ -546,18 +546,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "250026.02622",
-                "funding": "0.00004855",
+                "dayNtlVlm": "249472.94094",
+                "funding": "0.00010613",
                 "impactPxs": [
-                    "2.8421",
-                    "2.84592"
+                    "2.8474",
+                    "2.8483"
                 ],
-                "markPx": "2.8438",
-                "midPx": "2.844",
-                "openInterest": "46061.3",
-                "oraclePx": "2.8392",
-                "premium": "0.00102141",
-                "prevDayPx": "2.8894"
+                "markPx": "2.8477",
+                "midPx": "2.84785",
+                "openInterest": "45986.4",
+                "oraclePx": "2.8437",
+                "premium": "0.00130112",
+                "prevDayPx": "2.9154"
             }
         },
         "FTM": {
@@ -566,18 +566,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "1614493.29478",
-                "funding": "0.00008135",
+                "dayNtlVlm": "1633423.1074",
+                "funding": "0.00007132",
                 "impactPxs": [
-                    "0.83077",
-                    "0.83093"
+                    "0.82436",
+                    "0.82452"
                 ],
-                "markPx": "0.83083",
-                "midPx": "0.83085",
-                "openInterest": "31147.0",
-                "oraclePx": "0.82975",
-                "premium": "0.00122929",
-                "prevDayPx": "0.81075"
+                "markPx": "0.82409",
+                "midPx": "0.82444",
+                "openInterest": "23785.0",
+                "oraclePx": "0.82345",
+                "premium": "0.00110511",
+                "prevDayPx": "0.8078"
             }
         },
         "kSHIB": {
@@ -586,18 +586,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "1442981.592897",
-                "funding": "0.00009924",
+                "dayNtlVlm": "1399183.264128",
+                "funding": "0.00014885",
                 "impactPxs": [
-                    "0.035788",
-                    "0.035794"
+                    "0.036015",
+                    "0.036026"
                 ],
-                "markPx": "0.035789",
-                "midPx": "0.035791",
+                "markPx": "0.036006",
+                "midPx": "0.036019",
                 "openInterest": "3074124.0",
-                "oraclePx": "0.035735",
-                "premium": "0.00148314",
-                "prevDayPx": "0.034528"
+                "oraclePx": "0.03594",
+                "premium": "0.00208681",
+                "prevDayPx": "0.034287"
             }
         },
         "OX": {
@@ -609,13 +609,13 @@
                 "dayNtlVlm": "13761.74683",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "0.014576",
-                    "0.0152"
+                    "0.014653",
+                    "0.015301"
                 ],
-                "markPx": "0.014726",
-                "midPx": "0.0149",
+                "markPx": "0.014818",
+                "midPx": "0.014988",
                 "openInterest": "0.0",
-                "oraclePx": "0.014863",
+                "oraclePx": "0.014966",
                 "premium": "0.0",
                 "prevDayPx": "0.016613"
             }
@@ -629,13 +629,13 @@
                 "dayNtlVlm": "3398.87196",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "4.77442",
-                    "5.10891"
+                    "4.77465",
+                    "5.11014"
                 ],
-                "markPx": "4.8906",
-                "midPx": "4.9389",
+                "markPx": "4.8946",
+                "midPx": "4.94595",
                 "openInterest": "107.8",
-                "oraclePx": "4.9382",
+                "oraclePx": "4.9394",
                 "premium": "0.0",
                 "prevDayPx": "3.457"
             }
@@ -649,7 +649,7 @@
                 "dayNtlVlm": "322.89288",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "2.55866",
+                    "2.55686",
                     "2.89375"
                 ],
                 "markPx": "2.7278",
@@ -666,18 +666,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "87341.81287",
-                "funding": "0.00006369",
+                "dayNtlVlm": "88075.68602",
+                "funding": "0.00006303",
                 "impactPxs": [
-                    "0.35424",
-                    "0.354377"
+                    "0.354522",
+                    "0.3546"
                 ],
-                "markPx": "0.35442",
-                "midPx": "0.35431",
-                "openInterest": "433194.0",
-                "oraclePx": "0.35383",
-                "premium": "0.00115875",
-                "prevDayPx": "0.34387"
+                "markPx": "0.3546",
+                "midPx": "0.354565",
+                "openInterest": "434304.0",
+                "oraclePx": "0.35397",
+                "premium": "0.00155945",
+                "prevDayPx": "0.34762"
             }
         },
         "BANANA": {
@@ -689,13 +689,13 @@
                 "dayNtlVlm": "195.558",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "34.60929",
-                    "37.11877"
+                    "33.06023",
+                    "37.03064"
                 ],
-                "markPx": "35.48",
-                "midPx": "35.8625",
+                "markPx": "34.545",
+                "midPx": "35.1855",
                 "openInterest": "15.7",
-                "oraclePx": "35.838",
+                "oraclePx": "34.902",
                 "premium": "0.0",
                 "prevDayPx": "31.896"
             }
@@ -706,18 +706,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "55098.91086",
+                "dayNtlVlm": "55250.37757",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "2.42793",
-                    "2.42949"
+                    "2.43116",
+                    "2.43236"
                 ],
-                "markPx": "2.4282",
-                "midPx": "2.4287",
-                "openInterest": "69870.7",
-                "oraclePx": "2.4291",
+                "markPx": "2.4315",
+                "midPx": "2.43175",
+                "openInterest": "69867.7",
+                "oraclePx": "2.4316",
                 "premium": "0.0",
-                "prevDayPx": "2.4796"
+                "prevDayPx": "2.5047"
             }
         },
         "TRB": {
@@ -726,18 +726,18 @@
             "onlyIsolated": false,
             "szDecimals": 2,
             "marketData": {
-                "dayNtlVlm": "153659.79068",
-                "funding": "0.00001822",
+                "dayNtlVlm": "151379.00148",
+                "funding": "0.0000125",
                 "impactPxs": [
-                    "104.8727",
-                    "105.407"
+                    "105.9635",
+                    "106.1662"
                 ],
-                "markPx": "105.07",
-                "midPx": "105.14",
-                "openInterest": "1285.66",
-                "oraclePx": "104.95",
-                "premium": "0.0",
-                "prevDayPx": "105.73"
+                "markPx": "106.07",
+                "midPx": "106.065",
+                "openInterest": "1285.87",
+                "oraclePx": "105.92",
+                "premium": "0.00041069",
+                "prevDayPx": "105.5"
             }
         },
         "CANTO": {
@@ -749,13 +749,13 @@
                 "dayNtlVlm": "33.786",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "0.219715",
-                    "0.229792"
+                    "0.220651",
+                    "0.230969"
                 ],
-                "markPx": "0.22278",
-                "midPx": "0.224945",
+                "markPx": "0.22369",
+                "midPx": "0.225925",
                 "openInterest": "0.0",
-                "oraclePx": "0.22499",
+                "oraclePx": "0.22583",
                 "premium": "0.0",
                 "prevDayPx": "0.1877"
             }
@@ -766,18 +766,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "572557.46938",
-                "funding": "0.0000125",
+                "dayNtlVlm": "576841.82689",
+                "funding": "0.00007371",
                 "impactPxs": [
-                    "0.51842",
-                    "0.52017"
+                    "0.511859",
+                    "0.51283"
                 ],
-                "markPx": "0.51986",
-                "midPx": "0.519295",
-                "openInterest": "109570.0",
-                "oraclePx": "0.51885",
-                "premium": "0.0",
-                "prevDayPx": "0.4872"
+                "markPx": "0.51222",
+                "midPx": "0.512345",
+                "openInterest": "109596.0",
+                "oraclePx": "0.51127",
+                "premium": "0.00115203",
+                "prevDayPx": "0.4945"
             }
         },
         "NTRN": {
@@ -786,18 +786,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "69762.0424",
-                "funding": "0.00013587",
+                "dayNtlVlm": "75423.8717",
+                "funding": "0.00011182",
                 "impactPxs": [
-                    "1.4645",
-                    "1.4648"
+                    "1.4732",
+                    "1.4735"
                 ],
-                "markPx": "1.4649",
-                "midPx": "1.46465",
-                "openInterest": "129536.0",
-                "oraclePx": "1.462",
-                "premium": "0.00170999",
-                "prevDayPx": "1.577"
+                "markPx": "1.4732",
+                "midPx": "1.47335",
+                "openInterest": "132595.0",
+                "oraclePx": "1.4703",
+                "premium": "0.00197239",
+                "prevDayPx": "1.5045"
             }
         },
         "KAS": {
@@ -806,18 +806,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "151088.81671",
-                "funding": "0.00006808",
+                "dayNtlVlm": "150689.77126",
+                "funding": "0.00009607",
                 "impactPxs": [
-                    "0.15037",
-                    "0.15107"
+                    "0.15067",
+                    "0.15071"
                 ],
-                "markPx": "0.15072",
-                "midPx": "0.15072",
-                "openInterest": "829150.0",
-                "oraclePx": "0.15038",
-                "premium": "0.0",
-                "prevDayPx": "0.15831"
+                "markPx": "0.15069",
+                "midPx": "0.15069",
+                "openInterest": "829603.0",
+                "oraclePx": "0.15043",
+                "premium": "0.00159543",
+                "prevDayPx": "0.1579"
             }
         },
         "BLUR": {
@@ -826,18 +826,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "410927.43608",
-                "funding": "0.00004361",
+                "dayNtlVlm": "410733.19466",
+                "funding": "0.0000125",
                 "impactPxs": [
-                    "0.68052",
-                    "0.68359"
+                    "0.68486",
+                    "0.68502"
                 ],
-                "markPx": "0.68213",
-                "midPx": "0.682055",
-                "openInterest": "35116.0",
-                "oraclePx": "0.6813",
-                "premium": "0.0",
-                "prevDayPx": "0.68412"
+                "markPx": "0.68492",
+                "midPx": "0.68494",
+                "openInterest": "34856.0",
+                "oraclePx": "0.6841",
+                "premium": "0.00111095",
+                "prevDayPx": "0.68856"
             }
         },
         "TIA": {
@@ -846,18 +846,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "706552.0467",
-                "funding": "0.00006478",
+                "dayNtlVlm": "695550.6246",
+                "funding": "0.00005584",
                 "impactPxs": [
-                    "16.421",
-                    "16.425"
+                    "16.484",
+                    "16.487"
                 ],
-                "markPx": "16.425",
-                "midPx": "16.423",
-                "openInterest": "2502.4",
-                "oraclePx": "16.405",
-                "premium": "0.00097531",
-                "prevDayPx": "16.436"
+                "markPx": "16.483",
+                "midPx": "16.4855",
+                "openInterest": "2495.2",
+                "oraclePx": "16.465",
+                "premium": "0.00115396",
+                "prevDayPx": "16.517"
             }
         },
         "BSV": {
@@ -866,18 +866,18 @@
             "onlyIsolated": false,
             "szDecimals": 2,
             "marketData": {
-                "dayNtlVlm": "141776.4054",
-                "funding": "0.00012516",
+                "dayNtlVlm": "142636.6328",
+                "funding": "0.00001394",
                 "impactPxs": [
-                    "116.3141",
-                    "116.3632"
+                    "115.6624",
+                    "115.733"
                 ],
-                "markPx": "116.31",
-                "midPx": "116.34",
-                "openInterest": "38.85",
-                "oraclePx": "116.07",
-                "premium": "0.00210304",
-                "prevDayPx": "108.19"
+                "markPx": "115.67",
+                "midPx": "115.7",
+                "openInterest": "35.6",
+                "oraclePx": "115.57",
+                "premium": "0.00079952",
+                "prevDayPx": "108.6"
             }
         },
         "TON": {
@@ -886,18 +886,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "114447.48778",
-                "funding": "0.00005444",
+                "dayNtlVlm": "110778.13397",
+                "funding": "0.00001738",
                 "impactPxs": [
-                    "2.8194",
-                    "2.8286"
+                    "2.8128",
+                    "2.8136"
                 ],
-                "markPx": "2.8214",
-                "midPx": "2.824",
-                "openInterest": "73833.6",
-                "oraclePx": "2.8185",
-                "premium": "0.00031932",
-                "prevDayPx": "2.7264"
+                "markPx": "2.8127",
+                "midPx": "2.8132",
+                "openInterest": "73835.1",
+                "oraclePx": "2.8099",
+                "premium": "0.00103207",
+                "prevDayPx": "2.7438"
             }
         },
         "ADA": {
@@ -906,18 +906,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "351050.70971",
-                "funding": "0.00006232",
+                "dayNtlVlm": "351260.85922",
+                "funding": "0.00008019",
                 "impactPxs": [
-                    "0.72823",
-                    "0.72838"
+                    "0.72909",
+                    "0.72925"
                 ],
-                "markPx": "0.72839",
-                "midPx": "0.728305",
-                "openInterest": "35502.0",
-                "oraclePx": "0.72755",
-                "premium": "0.00093464",
-                "prevDayPx": "0.73666"
+                "markPx": "0.72921",
+                "midPx": "0.72917",
+                "openInterest": "35500.0",
+                "oraclePx": "0.7283",
+                "premium": "0.00108472",
+                "prevDayPx": "0.74244"
             }
         },
         "MINA": {
@@ -926,18 +926,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "323284.8927",
-                "funding": "0.00006569",
+                "dayNtlVlm": "323991.4175",
+                "funding": "0.00012013",
                 "impactPxs": [
-                    "1.324",
-                    "1.33"
+                    "1.3251",
+                    "1.3254"
                 ],
-                "markPx": "1.3264",
-                "midPx": "1.327",
-                "openInterest": "20143.0",
-                "oraclePx": "1.3245",
-                "premium": "0.0",
-                "prevDayPx": "1.3277"
+                "markPx": "1.3252",
+                "midPx": "1.32525",
+                "openInterest": "19954.0",
+                "oraclePx": "1.3232",
+                "premium": "0.00143591",
+                "prevDayPx": "1.3367"
             }
         },
         "POLYX": {
@@ -949,13 +949,13 @@
                 "dayNtlVlm": "129767.36148",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "0.243163",
-                    "0.246138"
+                    "0.243972",
+                    "0.24525"
                 ],
-                "markPx": "0.24466",
-                "midPx": "0.24465",
+                "markPx": "0.24453",
+                "midPx": "0.244615",
                 "openInterest": "240677.0",
-                "oraclePx": "0.2443",
+                "oraclePx": "0.2442",
                 "premium": "0.0",
                 "prevDayPx": "0.23941"
             }
@@ -966,18 +966,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "127891.74758",
-                "funding": "0.00003696",
+                "dayNtlVlm": "127516.8004",
+                "funding": "0.00002612",
                 "impactPxs": [
-                    "7.13012",
-                    "7.15506"
+                    "7.14227",
+                    "7.14439"
                 ],
-                "markPx": "7.1395",
-                "midPx": "7.14265",
-                "openInterest": "5881.3",
-                "oraclePx": "7.13",
-                "premium": "0.00001683",
-                "prevDayPx": "7.1653"
+                "markPx": "7.1414",
+                "midPx": "7.1434",
+                "openInterest": "5890.5",
+                "oraclePx": "7.1325",
+                "premium": "0.00136979",
+                "prevDayPx": "7.1824"
             }
         },
         "AXL": {
@@ -986,18 +986,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "31622.1866",
+                "dayNtlVlm": "31512.6404",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "2.157054",
-                    "2.163691"
+                    "2.169265",
+                    "2.175356"
                 ],
-                "markPx": "2.1602",
-                "midPx": "2.1601",
-                "openInterest": "74955.0",
-                "oraclePx": "2.1567",
-                "premium": "0.00016414",
-                "prevDayPx": "2.2138"
+                "markPx": "2.1727",
+                "midPx": "2.17235",
+                "openInterest": "74863.0",
+                "oraclePx": "2.1691",
+                "premium": "0.00007607",
+                "prevDayPx": "2.2422"
             }
         },
         "PENDLE": {
@@ -1006,18 +1006,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "121726.8725",
-                "funding": "0.00012584",
+                "dayNtlVlm": "121916.9138",
+                "funding": "0.00014962",
                 "impactPxs": [
-                    "3.082443",
-                    "3.083453"
+                    "3.094364",
+                    "3.095008"
                 ],
-                "markPx": "3.0833",
-                "midPx": "3.08295",
-                "openInterest": "26539.0",
-                "oraclePx": "3.0781",
-                "premium": "0.00141094",
-                "prevDayPx": "3.2364"
+                "markPx": "3.0949",
+                "midPx": "3.09465",
+                "openInterest": "26567.0",
+                "oraclePx": "3.0883",
+                "premium": "0.00196354",
+                "prevDayPx": "3.2379"
             }
         },
         "STG": {
@@ -1026,18 +1026,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "117586.96047",
+                "dayNtlVlm": "117197.97533",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "0.74442",
-                    "0.745365"
+                    "0.74801",
+                    "0.753551"
                 ],
-                "markPx": "0.74465",
-                "midPx": "0.744895",
-                "openInterest": "228416.0",
-                "oraclePx": "0.74345",
-                "premium": "0.00130473",
-                "prevDayPx": "0.71638"
+                "markPx": "0.75051",
+                "midPx": "0.75078",
+                "openInterest": "228422.0",
+                "oraclePx": "0.74915",
+                "premium": "0.0",
+                "prevDayPx": "0.7166"
             }
         },
         "FET": {
@@ -1046,18 +1046,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "2266561.2443",
-                "funding": "0.00009998",
+                "dayNtlVlm": "2353025.0405",
+                "funding": "0.00014328",
                 "impactPxs": [
-                    "2.806",
-                    "2.8068"
+                    "2.8201",
+                    "2.8209"
                 ],
-                "markPx": "2.8077",
-                "midPx": "2.8064",
-                "openInterest": "12558.0",
-                "oraclePx": "2.8034",
-                "premium": "0.00092745",
-                "prevDayPx": "2.4737"
+                "markPx": "2.823",
+                "midPx": "2.8205",
+                "openInterest": "23093.0",
+                "oraclePx": "2.8173",
+                "premium": "0.00099386",
+                "prevDayPx": "2.5117"
             }
         },
         "STRAX": {
@@ -1066,18 +1066,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "98583.3055",
-                "funding": "0.00012854",
+                "dayNtlVlm": "97911.344",
+                "funding": "0.00009119",
                 "impactPxs": [
-                    "1.534835",
-                    "1.538858"
+                    "1.535427",
+                    "1.536032"
                 ],
-                "markPx": "1.5364",
-                "midPx": "1.53685",
-                "openInterest": "114557.0",
-                "oraclePx": "1.533",
-                "premium": "0.001197",
-                "prevDayPx": "1.5467"
+                "markPx": "1.5359",
+                "midPx": "1.53575",
+                "openInterest": "114640.0",
+                "oraclePx": "1.532",
+                "premium": "0.00223695",
+                "prevDayPx": "1.5511"
             }
         },
         "NEAR": {
@@ -1086,18 +1086,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "1317367.15175",
-                "funding": "0.00007664",
+                "dayNtlVlm": "1329460.55553",
+                "funding": "0.00009466",
                 "impactPxs": [
-                    "5.6444",
-                    "5.6458"
+                    "5.6765",
+                    "5.6779"
                 ],
-                "markPx": "5.6449",
-                "midPx": "5.6451",
-                "openInterest": "9995.7",
-                "oraclePx": "5.637",
-                "premium": "0.00131276",
-                "prevDayPx": "5.3681"
+                "markPx": "5.678",
+                "midPx": "5.6772",
+                "openInterest": "11811.4",
+                "oraclePx": "5.67",
+                "premium": "0.00114638",
+                "prevDayPx": "5.3971"
             }
         },
         "MEME": {
@@ -1106,18 +1106,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "1165377.199549",
-                "funding": "0.00010984",
+                "dayNtlVlm": "1156553.184204",
+                "funding": "0.00006824",
                 "impactPxs": [
-                    "0.045335",
-                    "0.045345"
+                    "0.045474",
+                    "0.0455"
                 ],
-                "markPx": "0.04532",
-                "midPx": "0.045341",
-                "openInterest": "1755752.0",
-                "oraclePx": "0.045247",
-                "premium": "0.00194488",
-                "prevDayPx": "0.042942"
+                "markPx": "0.045492",
+                "midPx": "0.045488",
+                "openInterest": "2016094.0",
+                "oraclePx": "0.045441",
+                "premium": "0.00072622",
+                "prevDayPx": "0.043871"
             }
         },
         "ORDI": {
@@ -1126,18 +1126,18 @@
             "onlyIsolated": false,
             "szDecimals": 2,
             "marketData": {
-                "dayNtlVlm": "1650892.45518",
-                "funding": "0.00009099",
+                "dayNtlVlm": "1630544.00369",
+                "funding": "0.00007513",
                 "impactPxs": [
-                    "78.541",
-                    "78.551"
+                    "79.198",
+                    "79.208"
                 ],
-                "markPx": "78.542",
-                "midPx": "78.546",
-                "openInterest": "1869.86",
-                "oraclePx": "78.433",
-                "premium": "0.00137697",
-                "prevDayPx": "78.434"
+                "markPx": "79.193",
+                "midPx": "79.203",
+                "openInterest": "1584.46",
+                "oraclePx": "79.093",
+                "premium": "0.00132755",
+                "prevDayPx": "79.622"
             }
         },
         "BADGER": {
@@ -1146,18 +1146,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "102860.87455",
-                "funding": "0.0000125",
+                "dayNtlVlm": "103264.10025",
+                "funding": "0.00005759",
                 "impactPxs": [
-                    "5.871",
-                    "5.89077"
+                    "5.86794",
+                    "5.86972"
                 ],
-                "markPx": "5.88",
-                "midPx": "5.8809",
-                "openInterest": "6361.2",
-                "oraclePx": "5.8691",
-                "premium": "0.00032373",
-                "prevDayPx": "5.6602"
+                "markPx": "5.8672",
+                "midPx": "5.8688",
+                "openInterest": "6351.7",
+                "oraclePx": "5.859",
+                "premium": "0.00152586",
+                "prevDayPx": "5.6512"
             }
         },
         "NEO": {
@@ -1166,18 +1166,18 @@
             "onlyIsolated": false,
             "szDecimals": 2,
             "marketData": {
-                "dayNtlVlm": "413592.69684",
-                "funding": "0.0000125",
+                "dayNtlVlm": "414076.38067",
+                "funding": "0.00009443",
                 "impactPxs": [
-                    "17.417",
-                    "17.463"
+                    "17.389",
+                    "17.394"
                 ],
-                "markPx": "17.436",
-                "midPx": "17.44",
-                "openInterest": "7213.98",
-                "oraclePx": "17.41",
-                "premium": "0.00040207",
-                "prevDayPx": "17.46"
+                "markPx": "17.39",
+                "midPx": "17.3915",
+                "openInterest": "7204.62",
+                "oraclePx": "17.361",
+                "premium": "0.00161281",
+                "prevDayPx": "17.578"
             }
         },
         "ZEN": {
@@ -1186,18 +1186,18 @@
             "onlyIsolated": false,
             "szDecimals": 2,
             "marketData": {
-                "dayNtlVlm": "169695.25004",
+                "dayNtlVlm": "169649.87623",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "13.0222",
-                    "13.0576"
+                    "13.2814",
+                    "13.288"
                 ],
-                "markPx": "13.044",
-                "midPx": "13.04",
-                "openInterest": "1732.74",
-                "oraclePx": "13.021",
-                "premium": "0.00009216",
-                "prevDayPx": "12.21"
+                "markPx": "13.277",
+                "midPx": "13.2845",
+                "openInterest": "1736.08",
+                "oraclePx": "13.245",
+                "premium": "0.00274821",
+                "prevDayPx": "12.225"
             }
         },
         "FIL": {
@@ -1206,18 +1206,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "3462611.51787",
-                "funding": "0.00010244",
+                "dayNtlVlm": "3481297.77627",
+                "funding": "0.00010387",
                 "impactPxs": [
-                    "11.4",
-                    "11.403"
+                    "11.532",
+                    "11.536"
                 ],
-                "markPx": "11.403",
-                "midPx": "11.4015",
-                "openInterest": "6047.3",
-                "oraclePx": "11.383",
-                "premium": "0.00149346",
-                "prevDayPx": "10.088"
+                "markPx": "11.531",
+                "midPx": "11.534",
+                "openInterest": "5318.9",
+                "oraclePx": "11.514",
+                "premium": "0.00156331",
+                "prevDayPx": "10.135"
             }
         },
         "PYTH": {
@@ -1226,18 +1226,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "226741.23953",
+                "dayNtlVlm": "225214.58191",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "0.686099",
-                    "0.68627"
+                    "0.6874",
+                    "0.68768"
                 ],
-                "markPx": "0.6862",
-                "midPx": "0.686185",
-                "openInterest": "32583.0",
-                "oraclePx": "0.6854",
-                "premium": "0.00101984",
-                "prevDayPx": "0.67447"
+                "markPx": "0.68749",
+                "midPx": "0.68754",
+                "openInterest": "32320.0",
+                "oraclePx": "0.68685",
+                "premium": "0.00080076",
+                "prevDayPx": "0.68146"
             }
         },
         "RUNE": {
@@ -1246,18 +1246,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "889898.24427",
-                "funding": "0.00008765",
+                "dayNtlVlm": "884402.49104",
+                "funding": "0.00009182",
                 "impactPxs": [
-                    "7.2793",
-                    "7.28087"
+                    "7.27039",
+                    "7.27193"
                 ],
-                "markPx": "7.2793",
-                "midPx": "7.28005",
-                "openInterest": "14685.4",
-                "oraclePx": "7.267",
-                "premium": "0.00169258",
-                "prevDayPx": "7.1138"
+                "markPx": "7.2728",
+                "midPx": "7.27115",
+                "openInterest": "15168.7",
+                "oraclePx": "7.259",
+                "premium": "0.00156909",
+                "prevDayPx": "7.1277"
             }
         },
         "SUSHI": {
@@ -1266,18 +1266,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "613278.42242",
+                "dayNtlVlm": "603573.63243",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "1.9345",
-                    "1.9379"
+                    "1.9252",
+                    "1.9315"
                 ],
-                "markPx": "1.9366",
-                "midPx": "1.9362",
-                "openInterest": "77738.8",
-                "oraclePx": "1.934",
-                "premium": "0.00025853",
-                "prevDayPx": "1.9683"
+                "markPx": "1.9284",
+                "midPx": "1.92835",
+                "openInterest": "77814.4",
+                "oraclePx": "1.9245",
+                "premium": "0.00036373",
+                "prevDayPx": "1.952"
             }
         },
         "ILV": {
@@ -1286,18 +1286,18 @@
             "onlyIsolated": false,
             "szDecimals": 2,
             "marketData": {
-                "dayNtlVlm": "33326.1783",
-                "funding": "0.00014786",
+                "dayNtlVlm": "34381.9116",
+                "funding": "0.00011582",
                 "impactPxs": [
-                    "122.1937",
-                    "122.2673"
+                    "121.423",
+                    "121.486"
                 ],
-                "markPx": "122.25",
-                "midPx": "122.23",
-                "openInterest": "294.9",
-                "oraclePx": "122.0",
-                "premium": "0.0015877",
-                "prevDayPx": "121.58"
+                "markPx": "121.48",
+                "midPx": "121.455",
+                "openInterest": "299.15",
+                "oraclePx": "121.27",
+                "premium": "0.00126165",
+                "prevDayPx": "121.09"
             }
         },
         "MAV": {
@@ -1306,18 +1306,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "103088.91497",
-                "funding": "0.00009629",
+                "dayNtlVlm": "102893.49264",
+                "funding": "0.00001454",
                 "impactPxs": [
-                    "0.631643",
-                    "0.634532"
+                    "0.635746",
+                    "0.636612"
                 ],
-                "markPx": "0.63312",
-                "midPx": "0.633085",
-                "openInterest": "406782.0",
-                "oraclePx": "0.63195",
-                "premium": "0.0",
-                "prevDayPx": "0.64617"
+                "markPx": "0.6359",
+                "midPx": "0.636185",
+                "openInterest": "406624.0",
+                "oraclePx": "0.63482",
+                "premium": "0.00145868",
+                "prevDayPx": "0.65042"
             }
         },
         "IMX": {
@@ -1327,15 +1327,15 @@
             "szDecimals": 1,
             "marketData": {
                 "dayNtlVlm": "338866.49313",
-                "funding": "0.00008178",
+                "funding": "0.0000125",
                 "impactPxs": [
-                    "3.3558",
-                    "3.3694"
+                    "3.3761",
+                    "3.4055"
                 ],
-                "markPx": "3.362",
-                "midPx": "3.3626",
+                "markPx": "3.3859",
+                "midPx": "3.3908",
                 "openInterest": "10790.2",
-                "oraclePx": "3.3577",
+                "oraclePx": "3.3847",
                 "premium": "0.0",
                 "prevDayPx": "3.346"
             }
@@ -1346,18 +1346,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "1702820.411304",
-                "funding": "0.00016372",
+                "dayNtlVlm": "1665054.650204",
+                "funding": "0.00012863",
                 "impactPxs": [
-                    "0.03213",
-                    "0.032136"
+                    "0.03235",
+                    "0.032367"
                 ],
-                "markPx": "0.03215",
-                "midPx": "0.032133",
-                "openInterest": "5740999.0",
-                "oraclePx": "0.032079",
-                "premium": "0.00158983",
-                "prevDayPx": "0.031192"
+                "markPx": "0.032355",
+                "midPx": "0.032358",
+                "openInterest": "5732897.0",
+                "oraclePx": "0.032306",
+                "premium": "0.00136198",
+                "prevDayPx": "0.031021"
             }
         },
         "NFTI": {
@@ -1369,13 +1369,13 @@
                 "dayNtlVlm": "17.0183",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "10.96744",
-                    "11.72504"
+                    "10.98477",
+                    "11.77734"
                 ],
-                "markPx": "11.495",
-                "midPx": "11.377",
+                "markPx": "11.526",
+                "midPx": "11.409",
                 "openInterest": "0.0",
-                "oraclePx": "11.371",
+                "oraclePx": "11.4",
                 "premium": "0.0",
                 "prevDayPx": "10.879"
             }
@@ -1386,18 +1386,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "137555.2088",
-                "funding": "0.0000125",
+                "dayNtlVlm": "132277.7485",
+                "funding": "0.00009022",
                 "impactPxs": [
-                    "1.491737",
-                    "1.50576"
+                    "1.481625",
+                    "1.482069"
                 ],
-                "markPx": "1.4986",
-                "midPx": "1.49875",
-                "openInterest": "58681.0",
-                "oraclePx": "1.4959",
-                "premium": "0.0",
-                "prevDayPx": "1.5417"
+                "markPx": "1.4822",
+                "midPx": "1.48185",
+                "openInterest": "58569.0",
+                "oraclePx": "1.4795",
+                "premium": "0.0014363",
+                "prevDayPx": "1.5133"
             }
         },
         "USTC": {
@@ -1406,18 +1406,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "160885.088777",
-                "funding": "0.00002144",
+                "dayNtlVlm": "160671.922662",
+                "funding": "0.0000178",
                 "impactPxs": [
-                    "0.036137",
-                    "0.036329"
+                    "0.036129",
+                    "0.036142"
                 ],
-                "markPx": "0.03623",
-                "midPx": "0.036233",
-                "openInterest": "2679190.0",
-                "oraclePx": "0.036177",
-                "premium": "0.0",
-                "prevDayPx": "0.036499"
+                "markPx": "0.036153",
+                "midPx": "0.036136",
+                "openInterest": "2677796.0",
+                "oraclePx": "0.036098",
+                "premium": "0.00085877",
+                "prevDayPx": "0.036646"
             }
         },
         "JUP": {
@@ -1426,18 +1426,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "1864356.31311",
-                "funding": "0.00007427",
+                "dayNtlVlm": "1824727.49695",
+                "funding": "0.00002811",
                 "impactPxs": [
-                    "0.72085",
-                    "0.72103"
+                    "0.71787",
+                    "0.71827"
                 ],
-                "markPx": "0.72095",
-                "midPx": "0.72094",
-                "openInterest": "101824.0",
-                "oraclePx": "0.72005",
-                "premium": "0.00111103",
-                "prevDayPx": "0.71187"
+                "markPx": "0.71827",
+                "midPx": "0.71807",
+                "openInterest": "110384.0",
+                "oraclePx": "0.71765",
+                "premium": "0.00030656",
+                "prevDayPx": "0.71104"
             }
         },
         "JOE": {
@@ -1446,18 +1446,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "390433.99396",
-                "funding": "0.00016669",
+                "dayNtlVlm": "390472.35827",
+                "funding": "0.00018889",
                 "impactPxs": [
-                    "0.566255",
-                    "0.56638"
+                    "0.56519",
+                    "0.56533"
                 ],
-                "markPx": "0.56627",
-                "midPx": "0.56632",
-                "openInterest": "272754.0",
-                "oraclePx": "0.5649",
-                "premium": "0.00239865",
-                "prevDayPx": "0.56877"
+                "markPx": "0.56518",
+                "midPx": "0.56526",
+                "openInterest": "272897.0",
+                "oraclePx": "0.56395",
+                "premium": "0.00219878",
+                "prevDayPx": "0.5716"
             }
         },
         "GALA": {
@@ -1466,18 +1466,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "619094.487271",
-                "funding": "0.00012539",
+                "dayNtlVlm": "641354.250207",
+                "funding": "0.00010652",
                 "impactPxs": [
-                    "0.045047",
-                    "0.045059"
+                    "0.045173",
+                    "0.045186"
                 ],
-                "markPx": "0.045051",
-                "midPx": "0.045053",
-                "openInterest": "4201308.0",
-                "oraclePx": "0.044973",
-                "premium": "0.00164543",
-                "prevDayPx": "0.043716"
+                "markPx": "0.045176",
+                "midPx": "0.045179",
+                "openInterest": "4179138.0",
+                "oraclePx": "0.045113",
+                "premium": "0.00132999",
+                "prevDayPx": "0.044081"
             }
         },
         "RSR": {
@@ -1486,18 +1486,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "141787.464842",
-                "funding": "0.00003459",
+                "dayNtlVlm": "140048.017307",
+                "funding": "0.0000125",
                 "impactPxs": [
-                    "0.005838",
-                    "0.005842"
+                    "0.005816",
+                    "0.005826"
                 ],
-                "markPx": "0.005844",
-                "midPx": "0.00584",
-                "openInterest": "7886073.0",
-                "oraclePx": "0.005835",
-                "premium": "0.00051414",
-                "prevDayPx": "0.005867"
+                "markPx": "0.005819",
+                "midPx": "0.005821",
+                "openInterest": "7947688.0",
+                "oraclePx": "0.005809",
+                "premium": "0.00120503",
+                "prevDayPx": "0.005897"
             }
         },
         "kLUNC": {
@@ -1506,18 +1506,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "841184.97518",
-                "funding": "0.00006555",
+                "dayNtlVlm": "818404.88975",
+                "funding": "0.00008091",
                 "impactPxs": [
-                    "0.19537",
-                    "0.19576"
+                    "0.19529",
+                    "0.195321"
                 ],
-                "markPx": "0.19557",
-                "midPx": "0.195565",
-                "openInterest": "1002906.0",
-                "oraclePx": "0.19523",
-                "premium": "0.0007171",
-                "prevDayPx": "0.19744"
+                "markPx": "0.19529",
+                "midPx": "0.195305",
+                "openInterest": "1004397.0",
+                "oraclePx": "0.19493",
+                "premium": "0.00184682",
+                "prevDayPx": "0.1957"
             }
         },
         "JTO": {
@@ -1526,18 +1526,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "663485.6306",
-                "funding": "0.00004144",
+                "dayNtlVlm": "653415.7374",
+                "funding": "0.00003409",
                 "impactPxs": [
-                    "2.7951",
-                    "2.7987"
+                    "2.8034",
+                    "2.8052"
                 ],
-                "markPx": "2.7983",
-                "midPx": "2.7969",
-                "openInterest": "40031.0",
-                "oraclePx": "2.7935",
-                "premium": "0.00057276",
-                "prevDayPx": "2.888"
+                "markPx": "2.8042",
+                "midPx": "2.8043",
+                "openInterest": "40001.0",
+                "oraclePx": "2.8002",
+                "premium": "0.00114278",
+                "prevDayPx": "2.9216"
             }
         },
         "ACE": {
@@ -1546,18 +1546,18 @@
             "onlyIsolated": false,
             "szDecimals": 2,
             "marketData": {
-                "dayNtlVlm": "266833.78129",
-                "funding": "0.0000125",
+                "dayNtlVlm": "266544.82963",
+                "funding": "0.00001259",
                 "impactPxs": [
-                    "12.555",
-                    "12.611"
+                    "12.553",
+                    "12.58"
                 ],
-                "markPx": "12.575",
-                "midPx": "12.583",
-                "openInterest": "6052.65",
-                "oraclePx": "12.561",
-                "premium": "0.0",
-                "prevDayPx": "12.735"
+                "markPx": "12.559",
+                "midPx": "12.5665",
+                "openInterest": "6074.16",
+                "oraclePx": "12.546",
+                "premium": "0.00055795",
+                "prevDayPx": "12.718"
             }
         },
         "WIF": {
@@ -1566,18 +1566,18 @@
             "onlyIsolated": true,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "2188110.8844",
-                "funding": "0.00022724",
+                "dayNtlVlm": "2111760.987",
+                "funding": "0.00021389",
                 "impactPxs": [
-                    "2.172866",
-                    "2.173767"
+                    "2.120897",
+                    "2.125"
                 ],
-                "markPx": "2.1715",
-                "midPx": "2.17325",
-                "openInterest": "100919.0",
-                "oraclePx": "2.1663",
-                "premium": "0.00303097",
-                "prevDayPx": "2.0394"
+                "markPx": "2.1236",
+                "midPx": "2.12295",
+                "openInterest": "105280.0",
+                "oraclePx": "2.1182",
+                "premium": "0.00127325",
+                "prevDayPx": "2.0583"
             }
         },
         "CAKE": {
@@ -1587,16 +1587,16 @@
             "szDecimals": 1,
             "marketData": {
                 "dayNtlVlm": "209320.18196",
-                "funding": "0.00003042",
+                "funding": "0.0000125",
                 "impactPxs": [
-                    "3.5935",
-                    "3.6014"
+                    "3.61356",
+                    "3.6272"
                 ],
-                "markPx": "3.5974",
-                "midPx": "3.59745",
+                "markPx": "3.6205",
+                "midPx": "3.6204",
                 "openInterest": "24402.7",
-                "oraclePx": "3.5921",
-                "premium": "0.00038974",
+                "oraclePx": "3.616",
+                "premium": "0.0",
                 "prevDayPx": "3.517"
             }
         },
@@ -1606,18 +1606,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "2502141.547351",
-                "funding": "0.00002813",
+                "dayNtlVlm": "2447980.871882",
+                "funding": "0.00005291",
                 "impactPxs": [
-                    "0.0505",
-                    "0.050513"
+                    "0.050544",
+                    "0.05056"
                 ],
                 "markPx": "0.050555",
-                "midPx": "0.050506",
-                "openInterest": "5371158.0",
-                "oraclePx": "0.05051",
-                "premium": "0.0",
-                "prevDayPx": "0.049283"
+                "midPx": "0.050552",
+                "openInterest": "5374646.0",
+                "oraclePx": "0.050498",
+                "premium": "0.00091093",
+                "prevDayPx": "0.04954"
             }
         },
         "ENS": {
@@ -1626,18 +1626,18 @@
             "onlyIsolated": false,
             "szDecimals": 2,
             "marketData": {
-                "dayNtlVlm": "887367.87391",
-                "funding": "0.0000125",
+                "dayNtlVlm": "894109.74482",
+                "funding": "0.00004084",
                 "impactPxs": [
-                    "25.566",
-                    "25.813"
+                    "25.605",
+                    "25.654"
                 ],
-                "markPx": "25.69",
-                "midPx": "25.6895",
-                "openInterest": "1916.23",
-                "oraclePx": "25.664",
-                "premium": "0.0",
-                "prevDayPx": "25.683"
+                "markPx": "25.626",
+                "midPx": "25.6295",
+                "openInterest": "2198.13",
+                "oraclePx": "25.593",
+                "premium": "0.00046888",
+                "prevDayPx": "25.787"
             }
         },
         "ETC": {
@@ -1646,18 +1646,18 @@
             "onlyIsolated": false,
             "szDecimals": 2,
             "marketData": {
-                "dayNtlVlm": "1514087.07467",
-                "funding": "0.00007801",
+                "dayNtlVlm": "1483420.81201",
+                "funding": "0.00009138",
                 "impactPxs": [
-                    "39.018",
-                    "39.023"
+                    "38.886",
+                    "38.892"
                 ],
-                "markPx": "39.047",
-                "midPx": "39.0205",
-                "openInterest": "4704.46",
-                "oraclePx": "39.0",
-                "premium": "0.00046154",
-                "prevDayPx": "38.592"
+                "markPx": "38.882",
+                "midPx": "38.889",
+                "openInterest": "4700.31",
+                "oraclePx": "38.83",
+                "premium": "0.00144218",
+                "prevDayPx": "38.895"
             }
         },
         "XAI": {
@@ -1666,18 +1666,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "501823.12936",
-                "funding": "0.00006794",
+                "dayNtlVlm": "500250.69724",
+                "funding": "0.0000125",
                 "impactPxs": [
-                    "1.3816",
-                    "1.3883"
+                    "1.3994",
+                    "1.4052"
                 ],
-                "markPx": "1.3848",
-                "midPx": "1.38495",
-                "openInterest": "72205.8",
-                "oraclePx": "1.3827",
+                "markPx": "1.4021",
+                "midPx": "1.4023",
+                "openInterest": "72259.6",
+                "oraclePx": "1.4002",
                 "premium": "0.0",
-                "prevDayPx": "1.3965"
+                "prevDayPx": "1.3953"
             }
         },
         "MANTA": {
@@ -1686,18 +1686,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "1861180.16448",
-                "funding": "0.00009054",
+                "dayNtlVlm": "1876618.61811",
+                "funding": "0.00004225",
                 "impactPxs": [
-                    "3.6357",
-                    "3.6362"
+                    "3.6718",
+                    "3.6746"
                 ],
-                "markPx": "3.636",
-                "midPx": "3.63595",
-                "openInterest": "19704.7",
-                "oraclePx": "3.6318",
-                "premium": "0.00107385",
-                "prevDayPx": "3.475"
+                "markPx": "3.6748",
+                "midPx": "3.6732",
+                "openInterest": "20362.6",
+                "oraclePx": "3.671",
+                "premium": "0.00021792",
+                "prevDayPx": "3.4895"
             }
         },
         "UMA": {
@@ -1706,18 +1706,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "231731.85923",
+                "dayNtlVlm": "331459.31672",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "4.75901",
-                    "4.76558"
+                    "4.9098",
+                    "4.91644"
                 ],
-                "markPx": "4.7695",
-                "midPx": "4.76225",
-                "openInterest": "16499.4",
-                "oraclePx": "4.7677",
-                "premium": "-0.00044466",
-                "prevDayPx": "4.0873"
+                "markPx": "4.918",
+                "midPx": "4.9131",
+                "openInterest": "18144.3",
+                "oraclePx": "4.9145",
+                "premium": "0.0",
+                "prevDayPx": "4.1388"
             }
         },
         "REQ": {
@@ -1726,18 +1726,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "32281.73626",
+                "dayNtlVlm": "31930.97238",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "0.152695",
-                    "0.152985"
+                    "0.154927",
+                    "0.155337"
                 ],
-                "markPx": "0.15273",
-                "midPx": "0.152825",
-                "openInterest": "45517.0",
-                "oraclePx": "0.15253",
-                "premium": "0.00108175",
-                "prevDayPx": "0.12804"
+                "markPx": "0.15513",
+                "midPx": "0.1551",
+                "openInterest": "44672.0",
+                "oraclePx": "0.15497",
+                "premium": "0.0",
+                "prevDayPx": "0.12927"
             }
         },
         "ONDO": {
@@ -1746,18 +1746,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "663689.07864",
-                "funding": "0.0000522",
+                "dayNtlVlm": "637597.75709",
+                "funding": "0.0000125",
                 "impactPxs": [
-                    "0.629123",
-                    "0.629273"
+                    "0.60632",
+                    "0.62192"
                 ],
-                "markPx": "0.62928",
-                "midPx": "0.6292",
-                "openInterest": "125727.0",
-                "oraclePx": "0.62821",
-                "premium": "0.00145334",
-                "prevDayPx": "0.62081"
+                "markPx": "0.61485",
+                "midPx": "0.61412",
+                "openInterest": "121454.0",
+                "oraclePx": "0.61342",
+                "premium": "0.0",
+                "prevDayPx": "0.63305"
             }
         },
         "ALT": {
@@ -1766,18 +1766,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "495153.53452",
-                "funding": "0.0000242",
+                "dayNtlVlm": "492643.01808",
+                "funding": "0.0000125",
                 "impactPxs": [
-                    "0.52682",
-                    "0.528725"
+                    "0.53024",
+                    "0.5314"
                 ],
-                "markPx": "0.52774",
-                "midPx": "0.52777",
-                "openInterest": "41407.0",
-                "oraclePx": "0.52695",
-                "premium": "0.0",
-                "prevDayPx": "0.53525"
+                "markPx": "0.53072",
+                "midPx": "0.53082",
+                "openInterest": "41195.0",
+                "oraclePx": "0.53016",
+                "premium": "0.0001509",
+                "prevDayPx": "0.53145"
             }
         },
         "ZETA": {
@@ -1786,18 +1786,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "226439.35719",
-                "funding": "0.00007487",
+                "dayNtlVlm": "226428.04042",
+                "funding": "0.00003938",
                 "impactPxs": [
-                    "2.3303",
-                    "2.33859"
+                    "2.36368",
+                    "2.3644"
                 ],
-                "markPx": "2.3333",
-                "midPx": "2.3344",
-                "openInterest": "42929.8",
-                "oraclePx": "2.3309",
-                "premium": "0.0",
-                "prevDayPx": "2.4037"
+                "markPx": "2.3639",
+                "midPx": "2.36405",
+                "openInterest": "42968.3",
+                "oraclePx": "2.3609",
+                "premium": "0.00117752",
+                "prevDayPx": "2.4162"
             }
         },
         "DYM": {
@@ -1806,18 +1806,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "534159.24561",
-                "funding": "0.0001159",
+                "dayNtlVlm": "497810.75569",
+                "funding": "0.00006887",
                 "impactPxs": [
-                    "6.4771",
-                    "6.4787"
+                    "6.5726",
+                    "6.5741"
                 ],
-                "markPx": "6.4765",
-                "midPx": "6.4779",
-                "openInterest": "16035.5",
-                "oraclePx": "6.466",
-                "premium": "0.00171667",
-                "prevDayPx": "6.6952"
+                "markPx": "6.5741",
+                "midPx": "6.57335",
+                "openInterest": "16038.2",
+                "oraclePx": "6.564",
+                "premium": "0.00131018",
+                "prevDayPx": "6.7057"
             }
         },
         "MAVIA": {
@@ -1826,18 +1826,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "125119.43859",
-                "funding": "0.00018014",
+                "dayNtlVlm": "124712.12324",
+                "funding": "0.0000125",
                 "impactPxs": [
-                    "7.35107",
-                    "7.36322"
+                    "7.43886",
+                    "7.45605"
                 ],
-                "markPx": "7.3591",
-                "midPx": "7.3573",
-                "openInterest": "9579.6",
-                "oraclePx": "7.3432",
-                "premium": "0.00107174",
-                "prevDayPx": "6.4113"
+                "markPx": "7.4445",
+                "midPx": "7.4474",
+                "openInterest": "9578.5",
+                "oraclePx": "7.4285",
+                "premium": "0.00139463",
+                "prevDayPx": "6.3938"
             }
         },
         "W": {
@@ -1849,7 +1849,7 @@
                 "dayNtlVlm": "134.92192",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "0.447452",
+                    "0.445022",
                     "0.609198"
                 ],
                 "markPx": "0.52644",
@@ -1869,13 +1869,13 @@
                 "dayNtlVlm": "0.83636",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "16998.3",
-                    "17662.3"
+                    "17136.8",
+                    "17883.6"
                 ],
-                "markPx": "17560.0",
-                "midPx": "17374.5",
+                "markPx": "17708.0",
+                "midPx": "17521.0",
                 "openInterest": "0.10939",
-                "oraclePx": "17365.0",
+                "oraclePx": "17528.0",
                 "premium": "0.0",
                 "prevDayPx": "20091.0"
             }
@@ -1886,18 +1886,18 @@
             "onlyIsolated": false,
             "szDecimals": 1,
             "marketData": {
-                "dayNtlVlm": "2335212.26951",
-                "funding": "0.00008824",
+                "dayNtlVlm": "2254811.79161",
+                "funding": "0.00008945",
                 "impactPxs": [
-                    "2.0756",
-                    "2.0764"
+                    "2.116",
+                    "2.1171"
                 ],
-                "markPx": "2.0765",
-                "midPx": "2.076",
-                "openInterest": "38739.6",
-                "oraclePx": "2.073",
-                "premium": "0.00125422",
-                "prevDayPx": "1.9365"
+                "markPx": "2.1173",
+                "midPx": "2.11655",
+                "openInterest": "43422.7",
+                "oraclePx": "2.114",
+                "premium": "0.00094607",
+                "prevDayPx": "1.9484"
             }
         },
         "TAO": {
@@ -1906,18 +1906,18 @@
             "onlyIsolated": false,
             "szDecimals": 3,
             "marketData": {
-                "dayNtlVlm": "86296.74051",
+                "dayNtlVlm": "91492.5579",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "693.678",
-                    "705.453"
+                    "690.135",
+                    "690.23"
                 ],
-                "markPx": "699.37",
-                "midPx": "699.565",
-                "openInterest": "173.579",
-                "oraclePx": "698.65",
-                "premium": "0.0",
-                "prevDayPx": "742.01"
+                "markPx": "690.18",
+                "midPx": "690.185",
+                "openInterest": "181.988",
+                "oraclePx": "689.55",
+                "premium": "0.00084838",
+                "prevDayPx": "741.2"
             }
         },
         "PIXEL": {
@@ -1926,18 +1926,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "1097433.12722",
+                "dayNtlVlm": "1091003.90741",
                 "funding": "0.0000125",
                 "impactPxs": [
-                    "0.61011",
-                    "0.61661"
+                    "0.61821",
+                    "0.6234"
                 ],
-                "markPx": "0.61352",
-                "midPx": "0.61336",
-                "openInterest": "132477.0",
-                "oraclePx": "0.6126",
+                "markPx": "0.62",
+                "midPx": "0.620805",
+                "openInterest": "132314.0",
+                "oraclePx": "0.6194",
                 "premium": "0.0",
-                "prevDayPx": "0.60082"
+                "prevDayPx": "0.60635"
             }
         },
         "AR": {
@@ -1946,18 +1946,18 @@
             "onlyIsolated": false,
             "szDecimals": 2,
             "marketData": {
-                "dayNtlVlm": "2379739.42844",
-                "funding": "0.00006931",
+                "dayNtlVlm": "2459257.58014",
+                "funding": "0.0000789",
                 "impactPxs": [
-                    "45.858",
-                    "45.869"
+                    "45.417",
+                    "45.439"
                 ],
-                "markPx": "45.821",
-                "midPx": "45.863",
-                "openInterest": "3610.52",
-                "oraclePx": "45.758",
-                "premium": "0.00218541",
-                "prevDayPx": "36.909"
+                "markPx": "45.453",
+                "midPx": "45.428",
+                "openInterest": "2887.31",
+                "oraclePx": "45.393",
+                "premium": "0.00052872",
+                "prevDayPx": "36.891"
             }
         },
         "MYRO": {
@@ -1966,18 +1966,18 @@
             "onlyIsolated": false,
             "szDecimals": 0,
             "marketData": {
-                "dayNtlVlm": "1927743.36914",
-                "funding": "0.00014583",
+                "dayNtlVlm": "1939039.13658",
+                "funding": "0.00008155",
                 "impactPxs": [
-                    "0.41371",
-                    "0.41397"
+                    "0.407746",
+                    "0.408192"
                 ],
-                "markPx": "0.41369",
-                "midPx": "0.41384",
-                "openInterest": "8880.0",
-                "oraclePx": "0.4128",
-                "premium": "0.00220446",
-                "prevDayPx": "0.33206"
+                "markPx": "0.40697",
+                "midPx": "0.40797",
+                "openInterest": "27356.0",
+                "oraclePx": "0.40603",
+                "premium": "0.00422629",
+                "prevDayPx": "0.36963"
             }
         }
     }

@@ -41,6 +41,7 @@ def init():
     # Now it's safe to import settings
     from settings import BASE_DIR, DATA_DIR, CONTANT_DIR
 
+    os.chdir(BASE_DIR) # Change the current working directory to the project root
     print(f"Initialized project with base directory: {BASE_DIR}")
 
 
