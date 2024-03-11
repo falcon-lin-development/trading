@@ -17,11 +17,18 @@ Definition:
 
 3) ranking (  )
 outperform in 7 days continuously
--> for every 15 mins, that's pct_change rank on closing price
--> plot the rank of pct_change in every 15mins for 7 days. [ step 1s ] 
+-> *for every 15 mins, that's pct_change rank on closing price*
+-> *plot the rank of pct_change in every 15mins for 7 days. [ step 1s ] this is quite useless since the data is messy*
+
+-> plot acc_percentage_change for 7 days in rolling windows manner
+-> rank rolling window per 7 days with [
+    highest acc_percentage_change, 
+    lowest var
+    ]
 
 
 
 4) strategey hypothesis
 
 5) backtesting
+
