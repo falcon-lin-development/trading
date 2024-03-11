@@ -27,8 +27,9 @@ outperform in 7 days continuously
     ]
 
 
-
 4) strategey hypothesis
+-> rank best 10 - rank worst 10 will have +ve return in the next 15minutes
+
 
 5) backtesting
 
