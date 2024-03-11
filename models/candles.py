@@ -1,4 +1,5 @@
 import json
+import os
 from typing import List
 from datetime import datetime
 import pandas as pd
@@ -123,6 +124,27 @@ class CandleList(PythonDictObject):
         df.to_csv(file_path_2, index=False)
 
         return f"Candles exported to {file_path}"
+
+    @classmethod
+    def save_fetch(cls, info, symbol, interval, start, end, file_name=None):
+        if file_name is None:
+            file_name = f"{symbol}.csv"
+        start_time = datetime.utcfromtimestamp(start / 1000).strftime(
+            "%Y-%m-%d-%H:%M:%S"
+        )
+        end_time = datetime.utcfromtimestamp(end / 1000).strftime(
+            "%Y-%m-%d-%H:%M:%S"
+        )
+
+        data_range = f"{start_time}{end_time}"
+        file_path_2 = DATA_DIR / data_range / file_name
+        if os.path.exists(file_path_2):
+            return cls.from_csv(file_path_2)
+        else:
+            result =  info.candles_snapshot(symbol, interval, start, end)
+            candles = cls.from_response(result)
+            return candles  
+
 
     @classmethod
     def from_csv(cls, file_name: str = None, symbol: str = None):
