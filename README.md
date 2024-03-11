@@ -28,8 +28,11 @@ outperform in 7 days continuously
 
 
 4) strategey hypothesis
--> rank best 10 - rank worst 10 will have +ve return in the next 15minutes
-
+-> *rank best 10 - rank worst 10 will have +ve return in the next 15minutes*
+-> *rank best 10 - rank worst 10 will have +ve return in the next day*
 
 5) backtesting
+-> with slippage rate 3%
+
+6) mock trading
 
