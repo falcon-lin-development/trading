@@ -34,5 +34,8 @@ outperform in 7 days continuously
 5) backtesting
 -> with slippage rate 3%
 
+panda quick screening
+frame-by-frame mock trading
+
 6) mock trading
 
