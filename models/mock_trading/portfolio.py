@@ -93,27 +93,6 @@ class Portfolio:
             print(f"Added new position: {position}.")
             return True
 
-    def remove_position(self, symbol, quantity):
-        """
-            Remove a position from the portfolio
-            1) if position exists, remove the position
-            2) if position does not exist, do nothing
-        """
-        if symbol in self.positions:
-            # Case 1: Position exists
-            existing_position = self.positions[symbol]
-            if existing_position.quantity > quantity:
-                existing_position.quantity -= quantity
-                print(
-                    f"Removed {quantity} from {symbol} position. New quantity: {existing_position.quantity}."
-                )
-            else:
-                del self.positions[symbol]
-                print(f"Removed {symbol} position from portfolio.")
-        else:
-            print(f"No position found for {symbol}.")
-            return False
-        
     def print_portfolio(self):
         print("Portfolio:")
         for symbol, position in self.positions.items():

@@ -52,9 +52,11 @@ class Strategy:
 
 
 class LongTopShortLowStrategy(Strategy):
+    HOLDING_PERIOD = 1
     def __init__(self, data: pd.DataFrame):
         self.raw_data = data.copy()
         self.data = self.prepare_data(data)
+        self.holding_period = None
 
     def prepare_data(self, data: pd.DataFrame):
         """
@@ -127,8 +129,6 @@ class LongTopShortLowStrategy(Strategy):
         """
         # calculate the rank done
         self.merge_data(current_data)
-
-        # Execute trades
         relevent_window = 1
         relevent_data = (
             self.data.groupby(level=0)
@@ -137,35 +137,64 @@ class LongTopShortLowStrategy(Strategy):
         )
         relevent_data.sort_values(by=["start_time", "rank"], inplace=True)
 
-        # Step 1: Sell the bottom 10% of coins (6 coins)
-        short_coins = relevent_data.head(6)
-        for symbol, row in short_coins.iterrows():
-            portfolio.add_position(
-                Position(
-                    position_type=PositionType.SHORT,
-                    symbol=symbol,
-                    quantity=1,
-                    price=row["close"] * (1 + slippage_rate),
-                    time=row["start_time"],
-                ),
-                transaction_commission_rate=transaction_commission_rate,
-            )
+        if self.holding_period is None:
+            self.holding_period = self.HOLDING_PERIOD
+            # Step 1: Sell the bottom 10% of coins (6 coins)
+            short_coins = relevent_data.head(6)
+            long_coins = relevent_data.tail(6)
+            for symbol, row in short_coins.iterrows():
+                portfolio.add_position(
+                    Position(
+                        position_type=PositionType.SHORT,
+                        symbol=symbol,
+                        quantity=1,
+                        price=row["open"] * (1 + slippage_rate),
+                        time=row["start_time"],
+                    ),
+                    transaction_commission_rate=transaction_commission_rate,
+                )
 
-        # Step 2: Buy the top 10% of coins (6 coins)
-        long_coins = relevent_data.tail(6)
-        for symbol, row in long_coins.iterrows():
-            portfolio.add_position(
-                Position(
-                    position_type=PositionType.LONG,
-                    symbol=symbol,
-                    quantity=1,
-                    price=row["close"] * (1 + slippage_rate),
-                    time=row["start_time"],
-                ),
-                transaction_commission_rate=transaction_commission_rate,
-            )
+            # Step 2: Buy the top 10% of coins (6 coins)
+            for symbol, row in long_coins.iterrows():
+                portfolio.add_position(
+                    Position(
+                        position_type=PositionType.LONG,
+                        symbol=symbol,
+                        quantity=1,
+                        price=row["open"] * (1 + slippage_rate),
+                        time=row["start_time"],
+                    ),
+                    transaction_commission_rate=transaction_commission_rate,
+                )
+        
+        if self.holding_period > 0:
+            self.holding_period -= 1
 
-        # Step 3: Close all positions that are no longer in the top or bottom 10%
+        if self.holding_period == 0:
+            self.holding_period = None
+            for symbol, position in portfolio.positions.items():
+                if position.position_type == PositionType.LONG:
+                    portfolio.add_position(
+                        Position(
+                            position_type=PositionType.SHORT,
+                            symbol=position.symbol,
+                            quantity=position.quantity,
+                            price=relevent_data.loc[position.symbol, "close"] * (1 - slippage_rate),
+                            time=current_data.index[-1],
+                        ),
+                        transaction_commission_rate=0,
+                    )
+                else:
+                    portfolio.add_position(
+                        Position(
+                            position_type=PositionType.LONG,
+                            symbol=position.symbol,
+                            quantity=position.quantity,
+                            price=relevent_data.loc[position.symbol, "close"] * (1 + slippage_rate),
+                            time=current_data.index[-1],
+                        ),
+                        transaction_commission_rate=0,
+                    )
 
 class BackTesting:
     """
@@ -182,5 +211,12 @@ class BackTesting:
         """
         Run the strategy on the data
         """
-        self.data["start_time"] = pd.to_datetime(self.data["start_time"])
-        df = self.data.sort_values(by=["start_time", "average_rank"])
+        strategy = LongTopShortLowStrategy(self.data)
+        for i in range(0, len(self.data), trading_interval):
+            current_data = self.data.iloc[i : i + trading_interval]
+            strategy.run(
+                current_data,
+                self.portfolio,
+                slippage_rate=self.slippage_rate,
+                transaction_commission_rate=self.transaction_commission_rate,
+            )
