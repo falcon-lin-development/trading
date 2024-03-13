@@ -1,7 +1,9 @@
-import enum
+from enum import Enum
+
+import pandas as pd
 
 
-class PositionType(enum):
+class PositionType(Enum):
     LONG = "long"
     SHORT = "short"
 
@@ -24,7 +26,6 @@ class Portfolio:
 
     def add_cash(self, amount):
         self.cash += amount
-        print(f"Added {amount} to cash. Total cash now {self.cash}.")
 
     def remove_cash(self, amount):
         if amount > self.cash:
@@ -32,8 +33,6 @@ class Portfolio:
             raise ValueError("Insufficient funds.")
             # return False
         self.cash -= amount
-        print(f"Removed {amount} from cash. Total cash now {self.cash}.")
-        # return True
 
     def add_position(self, position, transaction_commission_rate):
         """
@@ -71,30 +70,37 @@ class Portfolio:
                 ) / combined_quantity
                 existing_position.quantity = combined_quantity
                 existing_position.price = combined_price
-                print(
-                    f"Combined {position.symbol} positions. New quantity: {combined_quantity}, new price: {combined_price}."
-                )
             else:
                 # Case 1b: Subtract positions
                 if existing_position.quantity > position.quantity:
                     existing_position.quantity -= position.quantity
-                    print(
-                        f"Subtracted {position.quantity} from {position.symbol} position. New quantity: {existing_position.quantity}."
-                    )
                 else:
                     position.quantity -= existing_position.quantity
                     position.price = existing_position.price
                     self.positions[position.symbol] = position
-                    print(
-                        f"Subtracted {existing_position.quantity} from {position.symbol} position. New quantity: {position.quantity}."
-                    )
+                if existing_position.quantity == 0:
+                    del self.positions[position.symbol]
         else:
             self.positions[position.symbol] = position
-            print(f"Added new position: {position}.")
+            # print(f"\tAdded new position: {position}.")
             return True
 
     def print_portfolio(self):
         print("Portfolio:")
         for symbol, position in self.positions.items():
-            print(f"{symbol}: {position.quantity} @ {position.price}")
-        print(f"Cash: {self.cash}")
+            print(f"\t{symbol}: {position.position_type} {position.quantity} @ {position.price}")
+        print(f"\tCash: {self.cash}")
+
+    def print_cash(self):
+        print(f"\tCash: {self.cash}")
+
+    def print_balance(self, current_data:pd.DataFrame):
+        balance = self.cash
+        for symbol, position in self.positions.items():
+            if position.position_type == PositionType.LONG:
+                price = current_data.loc[(symbol,), "close"].iloc[0]
+                balance += position.quantity * price
+            else:
+                price = current_data.loc[(symbol,), "close"].iloc[0]
+                balance -= position.quantity * price
+        print(f"\tBalance: {balance}")
