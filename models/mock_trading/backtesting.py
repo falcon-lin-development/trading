@@ -1,5 +1,6 @@
+import pandas as pd
 from .portfolio import Portfolio, Position, PositionType
-from .strategy import LongTopShortLowStrategy
+from .strategy import ExecuteMode, LongTopShortLowStrategy
 
 
 class BackTesting:
@@ -12,10 +13,11 @@ class BackTesting:
         initial_cash: float,
         data,
         testing=True,
-        slippage_rate=0.0025,
+        slippage_rate=0.003,
         transaction_commission_rate=0.00025,
+        verbose=False
     ):
-        self.portfolio = Portfolio(initial_cash=initial_cash)
+        self.portfolio = Portfolio(initial_cash=initial_cash, verbose=verbose)
         self.slippage_rate = slippage_rate  # 0.3% slippage
         self.transaction_commission_rate = transaction_commission_rate  # 0.025%
         self.data = data
@@ -25,26 +27,33 @@ class BackTesting:
         """
         Run the strategy on the data
         """
-        
+
         strategy = LongTopShortLowStrategy(
             portfolio=self.portfolio,
             testing_mode=self.testing,
             slippage_rate=self.slippage_rate,
             transaction_commission_rate=self.transaction_commission_rate,
         )
-        strategy.set_data(self.data)
+        # strategy.set_data(self.data)
+        strategy.data = pd.read_csv("data.csv", parse_dates=[1, 2])
+        strategy.data.set_index(["symbol", "start_time"], inplace=True)
 
-        for i, (index, data) in enumerate(self.future_data.groupby("start_time")):
-            print(i)
+        current = 0
+        for i, (index, data) in enumerate(self.data.groupby("start_time")):
+            print("-------", i, i % trading_interval, "data shape", data.shape, "-------")
             print(f"Running strategy on {index}")
 
+            actions = []
+            if i % trading_interval == 0:
+                actions.append(ExecuteMode.OPEN)
+            if i % trading_interval == trading_interval - 1:
+                actions.append(ExecuteMode.CLOSE)
 
-            break
-            strategy.run(
-                data,
-                self.portfolio,
-                execute_mode=[]
-            )
-            # self.portfolio.print_portfolio()
-            self.portfolio.print_cash()
+            strategy.run(data, self.portfolio, execute_modes=actions)
+            self.portfolio.print_portfolio()
+            # self.portfolio.print_cash()
+            # self.portfolio.print_total_balance(current_data=data)
+            if current == 2:
+                break
+            current += 1
             # break

@@ -38,7 +38,7 @@ class LongTopShortLowStrategy(Strategy):
         self,
         portfolio: Portfolio,
         testing_mode=True,
-        slippage_rate=0.0025,
+        slippage_rate=0.003,
         transaction_commission_rate=0.00025,
     ):
         self.portfolio = portfolio
@@ -99,13 +99,18 @@ class LongTopShortLowStrategy(Strategy):
             self.data = self.merge_data(current_data)
 
         current_time = current_data.index.get_level_values("start_time").min()
-        relevent_data = self.data.loc[(slice(None), slice(current_time)), :]
-        relevent_data.sort_values(by=["start_time", "rank"], inplace=True)
+        relevent_data = self.data.loc[(slice(None), current_time), :]
+        relevent_data = relevent_data.sort_values(by=["start_time", "rank"])
+        print(current_time, relevent_data.shape)
 
         if ExecuteMode.OPEN in execute_modes:
             # open new positions at the beginning
-            long_coins = relevent_data.groupby("start_time").head(6)
-            short_coins = relevent_data.groupby("start_time").tail(6)
+            long_coins = relevent_data.groupby("start_time").head(10)
+            # if (len(long_coins) > 6):
+            #     print(long_coins.shape)
+            #     print(long_coins)
+                # raise ValueError("long_coins should not be more than 6")
+            short_coins = relevent_data.groupby("start_time").tail(10)
             self.execute_open_position(portfolio, long_coins, short_coins)
 
         if ExecuteMode.CLOSE in execute_modes:
@@ -114,14 +119,19 @@ class LongTopShortLowStrategy(Strategy):
 
     def execute_open_position(self, portfolio: Portfolio, long_coins, short_coins):
         print(
-            "long_coins",
+            "long coins",
             long_coins.index.get_level_values(0).unique().tolist(),
-            "short_coins",
+            # long_coins.loc[:,"rank"].values,
+            "short coins",
             short_coins.index.get_level_values(0).unique().tolist(),
+            # short_coins.loc[:,"rank"].values,
         )
-        investment_per_coin = portfolio.cash / 12  # Divided among top 10 and bottom 10
+        print("long rank", long_coins.loc[:, "rank"].values, "short rank", short_coins.loc[:, "rank"].values)
+        investment_per_coin = portfolio.cash / 20  # Divided among top 10 and bottom 10
         for indexs, row in short_coins.iterrows():
             symbol = indexs[0]
+            if np.isnan(row["rank"]):
+                continue
             portfolio.add_position(
                 Position(
                     position_type=PositionType.SHORT,
@@ -137,6 +147,8 @@ class LongTopShortLowStrategy(Strategy):
 
         # Step 2: Buy the top 10% of coins (6 coins)
         for indexs, row in long_coins.iterrows():
+            if np.isnan(row["rank"]):
+                continue
             symbol = indexs[0]
             portfolio.add_position(
                 Position(
@@ -144,7 +156,7 @@ class LongTopShortLowStrategy(Strategy):
                     symbol=symbol,
                     # quantity=1,
                     quantity=investment_per_coin
-                    / (row["open"] * (1 - self.slippage_rate)),
+                    / (row["open"] * (1 + self.slippage_rate)),
                     price=row["open"] * (1 + self.slippage_rate),
                     time=row.name[0],
                 ),
@@ -152,7 +164,8 @@ class LongTopShortLowStrategy(Strategy):
             )
 
     def execute_close_position(self, portfolio: Portfolio, current_data: pd.DataFrame):
-        for symbol, position in portfolio.positions.items():
+        print("closing positions")
+        for symbol, position in portfolio.positions.copy().items():
             if position.position_type == PositionType.LONG:
                 portfolio.add_position(
                     Position(
