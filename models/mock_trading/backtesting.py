@@ -15,7 +15,7 @@ class BackTesting:
         testing=True,
         slippage_rate=0.003,
         transaction_commission_rate=0.00025,
-        verbose=False
+        verbose=False,
     ):
         self.portfolio = Portfolio(initial_cash=initial_cash, verbose=verbose)
         self.slippage_rate = slippage_rate  # 0.3% slippage
@@ -23,7 +23,9 @@ class BackTesting:
         self.data = data
         self.testing = testing
 
-    def run_strategy(self, trading_interval: int):
+    def run_strategy(self, trading_interval: int, 
+            loop=None
+        ):
         """
         Run the strategy on the data
         """
@@ -50,10 +52,11 @@ class BackTesting:
                 actions.append(ExecuteMode.CLOSE)
 
             strategy.run(data, self.portfolio, execute_modes=actions)
-            self.portfolio.print_portfolio()
+            # self.portfolio.print_portfolio()
             # self.portfolio.print_cash()
-            # self.portfolio.print_total_balance(current_data=data)
-            if current == 2:
-                break
+            self.portfolio.print_total_balance(current_data=data)
+
             current += 1
+            if loop is not None and current == 4:
+                break
             # break

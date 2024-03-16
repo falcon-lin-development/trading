@@ -98,19 +98,58 @@ class LongTopShortLowStrategy(Strategy):
         if not self.testing_mode:
             self.data = self.merge_data(current_data)
 
+        def get_relevant_data(current_time):
+            try:
+                relevant_data = self.data.loc[(slice(None), current_time), :]
+            except KeyError:
+                relevant_data = pd.DataFrame(
+                    columns=self.data.columns, index=self.data.index[:0]
+                ).sort_index()
+            return relevant_data
+
         current_time = current_data.index.get_level_values("start_time").min()
-        relevent_data = self.data.loc[(slice(None), current_time), :]
-        relevent_data = relevent_data.sort_values(by=["start_time", "rank"])
-        print(current_time, relevent_data.shape)
+        previous_time = current_time - pd.Timedelta(minutes=15)
+        # current_data = get_relevant_data(current_time=current_time)
+        previous_data = get_relevant_data(current_time=previous_time)
+        # current_data = current_data.sort_values(by=["start_time", "rank"])
+        previous_data = previous_data.sort_values(by=["start_time", "rank"])
+        print("|", current_time, current_data.shape)
+        print("|", previous_time, previous_data.shape)
 
         if ExecuteMode.OPEN in execute_modes:
             # open new positions at the beginning
-            long_coins = relevent_data.groupby("start_time").head(10)
-            # if (len(long_coins) > 6):
-            #     print(long_coins.shape)
-            #     print(long_coins)
-                # raise ValueError("long_coins should not be more than 6")
-            short_coins = relevent_data.groupby("start_time").tail(10)
+            top10Coins = previous_data.groupby("start_time").head(10)
+            bot10Coins = previous_data.groupby("start_time").tail(10)
+            long_coins = current_data.loc[
+                (top10Coins.index.get_level_values(0).unique().tolist(), slice(None)), :
+            ]
+            short_coins = current_data.loc[
+                (bot10Coins.index.get_level_values(0).unique().tolist(), slice(None)), :
+            ]
+            if long_coins.shape[0] == 0 and short_coins.shape[0] == 0:
+                print("no coins to trade")
+                return
+            elif np.isnan(top10Coins["rank"]).any() or np.isnan(bot10Coins["rank"]).any():
+                print("ranks:", top10Coins["rank"].values, bot10Coins["rank"].values)
+                print("no rank")
+                return
+            else:
+                print(
+                    "long coins",
+                    long_coins.index.get_level_values(0).unique().tolist(),
+                    # long_coins.loc[:,"rank"].values,
+                    "short coins",
+                    short_coins.index.get_level_values(0).unique().tolist(),
+                    # short_coins.loc[:,"rank"].values,
+                )
+
+                print(
+                    "long rank",
+                    top10Coins.loc[:, "rank"].values,
+                    "short rank",
+                    bot10Coins.loc[:, "rank"].values,
+                )
+
             self.execute_open_position(portfolio, long_coins, short_coins)
 
         if ExecuteMode.CLOSE in execute_modes:
@@ -118,20 +157,9 @@ class LongTopShortLowStrategy(Strategy):
             self.execute_close_position(portfolio, current_data)
 
     def execute_open_position(self, portfolio: Portfolio, long_coins, short_coins):
-        print(
-            "long coins",
-            long_coins.index.get_level_values(0).unique().tolist(),
-            # long_coins.loc[:,"rank"].values,
-            "short coins",
-            short_coins.index.get_level_values(0).unique().tolist(),
-            # short_coins.loc[:,"rank"].values,
-        )
-        print("long rank", long_coins.loc[:, "rank"].values, "short rank", short_coins.loc[:, "rank"].values)
         investment_per_coin = portfolio.cash / 20  # Divided among top 10 and bottom 10
         for indexs, row in short_coins.iterrows():
             symbol = indexs[0]
-            if np.isnan(row["rank"]):
-                continue
             portfolio.add_position(
                 Position(
                     position_type=PositionType.SHORT,
@@ -147,8 +175,6 @@ class LongTopShortLowStrategy(Strategy):
 
         # Step 2: Buy the top 10% of coins (6 coins)
         for indexs, row in long_coins.iterrows():
-            if np.isnan(row["rank"]):
-                continue
             symbol = indexs[0]
             portfolio.add_position(
                 Position(
@@ -165,6 +191,7 @@ class LongTopShortLowStrategy(Strategy):
 
     def execute_close_position(self, portfolio: Portfolio, current_data: pd.DataFrame):
         print("closing positions")
+        current_data
         for symbol, position in portfolio.positions.copy().items():
             if position.position_type == PositionType.LONG:
                 portfolio.add_position(
