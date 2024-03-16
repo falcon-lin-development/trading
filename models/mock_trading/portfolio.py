@@ -112,6 +112,17 @@ class Portfolio:
     def print_cash(self):
         print(f"\tCash: {self.cash}")
 
+    def total_balance(self, current_data: pd.DataFrame):
+        balance = self.cash
+        for symbol, position in self.positions.items():
+            if position.position_type == PositionType.LONG:
+                close_price = current_data.loc[(symbol,), "close"].iloc[0]
+                balance += position.quantity * close_price
+            else:
+                close_price = current_data.loc[(symbol,), "close"].iloc[0]
+                balance -= position.quantity * close_price
+        return balance
+
     def print_total_balance(self, current_data: pd.DataFrame):
         # balance = self.cash
         best_balance = self.cash

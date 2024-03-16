@@ -23,9 +23,7 @@ class BackTesting:
         self.data = data
         self.testing = testing
 
-    def run_strategy(self, trading_interval: int, 
-            loop=None
-        ):
+    def run_strategy(self, trading_interval: int, loop=None):
         """
         Run the strategy on the data
         """
@@ -40,11 +38,25 @@ class BackTesting:
         strategy.data = pd.read_csv("data.csv", parse_dates=[1, 2])
         strategy.data.set_index(["symbol", "start_time"], inplace=True)
 
-        current = 0
+        current = -1
+        results = []
         for i, (index, data) in enumerate(self.data.groupby("start_time")):
-            print("-------", i, i % trading_interval, "data shape", data.shape, "-------")
+            current += 1
+            if loop is not None and current == loop:
+                break
+            print(
+                "-------",
+                "loop: ",
+                i,
+                "i % interval: ",
+                i % trading_interval,
+                "data shape",
+                data.shape,
+                "-------",
+            )
             print(f"Running strategy on {index}")
 
+            before_balance = self.portfolio.total_balance(current_data=data)
             actions = []
             if i % trading_interval == 0:
                 actions.append(ExecuteMode.OPEN)
@@ -52,11 +64,17 @@ class BackTesting:
                 actions.append(ExecuteMode.CLOSE)
 
             strategy.run(data, self.portfolio, execute_modes=actions)
+
+            results.append(
+                {
+                    "timestamp": index,
+                    "return": self.portfolio.total_balance(current_data=data) - before_balance,
+                    "principal": self.portfolio.total_balance(current_data=data),
+                }
+            )
             # self.portfolio.print_portfolio()
             # self.portfolio.print_cash()
             self.portfolio.print_total_balance(current_data=data)
 
-            current += 1
-            if loop is not None and current == 4:
-                break
+        return pd.DataFrame(results)
             # break
