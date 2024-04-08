@@ -120,3 +120,8 @@ class CoinNames(Enum):
     TAO = 'TAO'
     AR = 'AR'
     MYRO = 'MYRO'
+    kFLOKI = 'kFLOKI'
+    BOME = 'BOME'
+    ETHFI = 'ETHFI'
+    ENA = 'ENA'
+    MNT = 'MNT'

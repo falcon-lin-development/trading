@@ -37,15 +37,15 @@ class MarketData(PythonDictObject):
     def to_series(self):
         # Convert coin's attributes to a Series
         data = {
-            'dayNtlVlm': float(self.dayNtlVlm),
-            'funding': float(self.funding),
-            'impactPxs': self.impactPxs,
-            'markPx': float(self.markPx),
-            'midPx': float(self.midPx),
-            'openInterest': float(self.openInterest),
-            'oraclePx': float(self.oraclePx),
-            'premium': float(self.premium),
-            'prevDayPx': float(self.prevDayPx),
+            'dayNtlVlm': float(self.dayNtlVlm) if self.dayNtlVlm else None,
+            'funding': float(self.funding) if self.funding else None,
+            'impactPxs': self.impactPxs if self.impactPxs else None,
+            'markPx': float(self.markPx) if self.markPx else None,
+            'midPx': float(self.midPx) if self.midPx else None,
+            'openInterest': float(self.openInterest) if self.openInterest else None,
+            'oraclePx': float(self.oraclePx) if self.oraclePx else None,
+            'premium': float(self.premium) if self.premium else None,
+            'prevDayPx': float(self.prevDayPx) if self.prevDayPx else None,
             # Include other attributes as needed
         }
         return pd.Series(data)

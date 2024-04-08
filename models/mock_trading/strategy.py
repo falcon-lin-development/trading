@@ -77,7 +77,7 @@ class LongTopShortLowStrategy(Strategy):
 
         # Step 3: Process the combined new data
         combined_new_data = pd.DataFrame(combined_new_data)
-        processed_new_data = self.prepare_data(combined_new_data)
+        processed_new_data = self._prepare_data(combined_new_data)
 
         # Step 4: Merge this processed new data with the existing processed data, avoiding reprocessing
         # Only keep entries from processed_new_data that are not already in self.data
