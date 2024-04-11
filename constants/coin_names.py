@@ -125,3 +125,4 @@ class CoinNames(Enum):
     ETHFI = 'ETHFI'
     ENA = 'ENA'
     MNT = 'MNT'
+    TNSR = 'TNSR'
