@@ -88,6 +88,9 @@ class Coin(PythonDictObject):
         return pd.Series(data)
 
 class Market(PythonDictObject):
+    """
+        Keep track of a set of coins object
+    """
     def __init__(self, coins: dict[str, Coin]):
         self.coins = coins
 
@@ -106,11 +109,9 @@ class Market(PythonDictObject):
         return self.coins[coin_name].to_dict()
 
     def to_df(self):
-        # Create a DataFrame from a list of Series objects
         df = pd.DataFrame([coin.to_series() for coin in self.coins.values()])
         return df
 
-    ########## storage ##########
     @classmethod
     def from_response(self, res):
         coins = {}
@@ -137,12 +138,11 @@ class Market(PythonDictObject):
             coins[coin.name] = coin
         return Market(coins)
 
-    @classmethod
-    def from_dict(cls, dict_representation):
-        coins = {}
-        for coin_name, coin_dict in dict_representation["coins"].items():
-            coins[coin_name] = Coin.from_dict(coin_dict)
-        return cls(coins)
+
+
+
+
+    ########## storage ##########
 
     def to_json_file(self, file_path: str):
         ### Convert the Market object to a dictionary
@@ -172,3 +172,10 @@ class Market(PythonDictObject):
             dict_representation = json.load(file)
         # Create a new Market object from the dictionary
         return cls.from_dict(dict_representation)
+
+    @classmethod
+    def from_dict(cls, dict_representation):
+        coins = {}
+        for coin_name, coin_dict in dict_representation["coins"].items():
+            coins[coin_name] = Coin.from_dict(coin_dict)
+        return cls(coins)
