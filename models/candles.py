@@ -62,6 +62,7 @@ class Candle(PythonDictObject):
         return pd.Series(
             {
                 "symbol": self.s,
+                "datetime": self.start_time,
                 "start_time": self.start_time,
                 "end_time": self.end_time,
                 "interval": self.i,

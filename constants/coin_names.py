@@ -126,3 +126,4 @@ class CoinNames(Enum):
     ENA = 'ENA'
     MNT = 'MNT'
     TNSR = 'TNSR'
+    SAGA = 'SAGA'
