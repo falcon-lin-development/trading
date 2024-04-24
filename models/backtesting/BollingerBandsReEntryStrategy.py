@@ -72,6 +72,8 @@ class BollingerBandsReEntryStrategy(Strategy):
     BUY_EQUITY = 10
     LEVERAGE = 1
     VERBOSE = True
+    K = 2
+    STOP_LOSS_PERCENTAGE = 0.5
 
     @property
     def verbose(self):
@@ -89,15 +91,28 @@ class BollingerBandsReEntryStrategy(Strategy):
     def leverage(self):
         return self._leverage or self.LEVERAGE
 
+    @property
+    def k(self):
+        return self._k or self.K
+
+    @property
+    def stop_loss_percentage(self):
+        return self._stop_loss_percentage or self.STOP_LOSS_PERCENTAGE
+
     def __init__(
         self,
         initial_capital=None,
         buy_equity=None,
         leverage=None,
+        k=None,
+        stop_loss_percentage=None,
     ):
         self._initial_capital = initial_capital
         self._buy_equity = buy_equity
         self._leverage = leverage
+        self._k = k
+        self._stop_loss_percentage = stop_loss_percentage
+
         self.data = pd.DataFrame(
             columns=[
                 *TRADE_DATA_COLS,
@@ -149,7 +164,9 @@ class BollingerBandsReEntryStrategy(Strategy):
 
             # Execute trades based on the state
             self.execute_trades()
-            self.portfolio.clean_up(current_data)
+            history = self.portfolio.check_portfolio_state(current_data)
+            if history is not None and history.shape[0] > 0:
+                self.history = pd.concat([self.history, history], ignore_index=True)
             self.portfolio.evaluate_portfolio(current_data)
             if self.verbose:
                 print(
@@ -215,6 +232,7 @@ class BollingerBandsReEntryStrategy(Strategy):
             price=row["close"],
             date=row["datetime"],
             leverage=self.leverage,
+            stop_loss_percentage=self.stop_loss_percentage,
         )
 
         history_action = None
@@ -250,6 +268,7 @@ class BollingerBandsReEntryStrategy(Strategy):
             row["close"],
             row["datetime"],
             leverage=self.leverage,
+            stop_loss_percentage=self.stop_loss_percentage,
         )
 
         history_action = None
@@ -276,7 +295,6 @@ class BollingerBandsReEntryStrategy(Strategy):
             ],
             ignore_index=True,
         )
-
 
     def end(self):
         """End the strategy."""

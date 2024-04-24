@@ -5,22 +5,33 @@ from .marginPosition import MarginPosition
 from .strategy import Action
 import pprint
 
+
 def calculate_drawdowns(portfolio_history):
     portfolio_history = portfolio_history.copy()
-    portfolio_history['min_portfolio_value'] = portfolio_history[['close', 'open', 'high', 'low']].min(axis=1)
-    portfolio_history['max_portfolio_value'] = portfolio_history[['close', 'open', 'high', 'low']].max(axis=1)
+    portfolio_history["min_portfolio_value"] = portfolio_history[
+        ["close", "open", "high", "low"]
+    ].min(axis=1)
+    portfolio_history["max_portfolio_value"] = portfolio_history[
+        ["close", "open", "high", "low"]
+    ].max(axis=1)
     portfolio_history["max_drawdown"] = (
         portfolio_history["close"] - portfolio_history["max_portfolio_value"].cummax()
     )
     portfolio_history["max_drawdown_percentage"] = (
-        (portfolio_history["close"] - portfolio_history["max_portfolio_value"].cummax())  / portfolio_history["max_portfolio_value"].cummax() * 100 
+        (portfolio_history["close"] - portfolio_history["max_portfolio_value"].cummax())
+        / portfolio_history["max_portfolio_value"].cummax()
+        * 100
     )
     portfolio_history["max_return_percentage"] = (
-        (portfolio_history["close"] - portfolio_history["max_portfolio_value"].cummin()) / portfolio_history["min_portfolio_value"].cummin() * 100
+        (portfolio_history["close"] - portfolio_history["max_portfolio_value"].cummin())
+        / portfolio_history["min_portfolio_value"].cummin()
+        * 100
     )
     # calculate 0 based return, meaning the return against the first closed value
     portfolio_history["0-based_return"] = (
-        (portfolio_history["close"] - portfolio_history["close"].iloc[0]) / portfolio_history["close"].iloc[0] * 100
+        (portfolio_history["close"] - portfolio_history["close"].iloc[0])
+        / portfolio_history["close"].iloc[0]
+        * 100
     )
 
     return portfolio_history
@@ -53,7 +64,7 @@ class Portfolio:
             columns=["datetime", "open", "high", "low", "close", "cash"]
         )
 
-    def long(self, symbol, equity, price, date, leverage=1.0):
+    def long(self, symbol, equity, price, date, leverage=1.0, stop_loss_percentage=0.0):
         """
         If No/Long Position, buy
         If Short Position, unwind
@@ -95,6 +106,7 @@ class Portfolio:
                     equity=equity,
                     side=MarginPosition.Side.LONG,
                     leverage=leverage,
+                    stop_loss_percentage=stop_loss_percentage,
                 )
 
                 ### RETURN VALUES ###
@@ -122,7 +134,9 @@ class Portfolio:
             print(e)
             return _action, _position
 
-    def short(self, symbol, equity, price, date, leverage=1.0):
+    def short(
+        self, symbol, equity, price, date, leverage=1.0, stop_loss_percentage=0.0
+    ):
         """
         If No/Short Position, short
         If Long Position, unwind
@@ -164,6 +178,7 @@ class Portfolio:
                     equity=equity,
                     side=MarginPosition.Side.SHORT,
                     leverage=leverage,
+                    stop_loss_percentage=stop_loss_percentage,
                 )
 
                 ### RETURN VALUES ###
@@ -251,78 +266,96 @@ class Portfolio:
         )
         return self.portfolio_history
 
-    def clean_up(self, current_row: pd.DataFrame):
+    def check_portfolio_state(self, current_row: pd.DataFrame):
         """
         Clean up the portfolio at each iteration
         """
-        liquidate_percentage = 1
-        history = pd.DataFrame(
-            columns=[
-                "datetime",
-                "symbol",
-                "action",
-                "price",
-                "quantity",
-            ]
-        )
+        history = None
+        def _try_stop_loss(position, price, datetime):
+            v = position.position_evaluation(price)
+            if position.should_stop_loss(price):
+                self.holdings[symbol].remove(position)
+                self.cash += v
+                self.transactions.append(
+                    Transaction(
+                        symbol=symbol,
+                        quantity=position.size,
+                        price=price,
+                        date=datetime,
+                        side=(
+                            Transaction.Side.CLOSE_LONG
+                            if position.side == MarginPosition.Side.LONG
+                            else Transaction.Side.CLOSE_SHORT
+                        ),
+                    )
+                )
+                _h = pd.DataFrame(
+                    {
+                        "datetime": datetime,
+                        "symbol": symbol,
+                        "action": Action.FORCE_LIQUITATION,
+                        "price": price,
+                        "quantity": position.size,
+                    },
+                    index=[0],
+                )
+                print(
+                    "clean up position: ",
+                    position.side,
+                    position.size,
+                )
+                return _h
+
         for symbol, position_list in self.holdings.items():
             for position in position_list[:]:
-                v = position.position_evaluation(
-                    current_row.loc[current_row["symbol"] == symbol, "close"].values[0]
-                )
-                if v <= 0:
-                    self.holdings[symbol].remove(position)
-                    self.cash += v
-                    self.transactions.append(
-                        Transaction(
-                            symbol=symbol,
-                            quantity=position.size,
-                            price=current_row.loc[
-                                current_row["symbol"] == symbol, "close"
-                            ].values[0],
-                            date=current_row["datetime"].values[0],
-                            side=(
-                                Transaction.Side.CLOSE_LONG
-                                if position.side == MarginPosition.Side.LONG
-                                else Transaction.Side.CLOSE_SHORT
-                            ),
+                current_datetime = current_row["datetime"].values[0]
+
+                if position.side == MarginPosition.Side.LONG:
+                    current_low_price = current_row.loc[
+                        current_row["symbol"] == symbol, "low"
+                    ].values[0]
+                    _h = _try_stop_loss(
+                        position=position,
+                        price=current_low_price, # work on low
+                        datetime=current_datetime,
+                    )
+                else:
+                    current_high_price = current_row.loc[
+                        current_row["symbol"] == symbol, "high"
+                    ].values[0]
+                    _h = _try_stop_loss(
+                        position=position,
+                        price=current_high_price, # work on high
+                        datetime=current_datetime,
+                    )
+
+                if _h is None:
+                    continue
+                else:
+                    if history is None:
+                        history = _h
+                    else:
+                        history = pd.concat(
+                            [
+                                history,
+                                _h,
+                            ],
+                            ignore_index=True,
                         )
-                    )
-                    history = pd.concat(
-                        [
-                            history,
-                            pd.DataFrame(
-                                {
-                                    "datetime": current_row["datetime"].values[0],
-                                    "symbol": symbol,
-                                    "action": Action.FORCE_LIQUITATION,
-                                    "price": current_row.loc[
-                                        current_row["symbol"] == symbol, "close"
-                                    ].values[0],
-                                    "quantity": position.size,
-                                },
-                                index=[0],
-                            ),
-                        ],
-                        ignore_index=True,
-                    )
-                    print(
-                        "clean up position: ",
-                        position.side,
-                        position.size,
-                    )
+
+        return history
 
     def info(self):
         """
-            Print the portfolio information
-            -> Start Time
-            -> Cash
-            -> Holdings
-            -> Evaluation
-            -> PNL ( + Percentage )
-            -> End Time
-            -> Max DrawDown Percentage
-            -> Max Return Percentage
+        Print the portfolio information
+        -> Start Time
+        -> Cash
+        -> Holdings
+        -> Evaluation
+        -> PNL ( + Percentage )
+        -> End Time
+        -> Max DrawDown Percentage
+        -> Max Return Percentage
         """
         print("Start Time: ", self.portfolio_history["datetime"].iloc[0])
         print("End Time: ", self.portfolio_history["datetime"].iloc[-1])
@@ -330,7 +363,11 @@ class Portfolio:
         print("Holdings: ")
         pprint.pprint(self.holdings)
         print("Evaluation: ", self.portfolio_history["close"].iloc[-1])
-        print("PNL: ", self.portfolio_history["close"].iloc[-1] - self.portfolio_history["close"].iloc[0])
+        print(
+            "PNL: ",
+            self.portfolio_history["close"].iloc[-1]
+            - self.portfolio_history["close"].iloc[0],
+        )
         print(
             "PNL Percentage: ",
             (
